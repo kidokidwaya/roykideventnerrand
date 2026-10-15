@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<title>Roykid Event &amp; Errands | Decor, Cakes, Catering and Errands</title>
+<meta name="description" content="Event decoration, wedding decor, surprise parties, cakes, small chops, party catering, and errands. Book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--logo:url('images/logo.jpg');--bg:#FFFDFA;--ink:#14291F;--mut:#5B6E63;--ln:rgba(20,41,31,.13);--g:#0B7A4E;--mint:#CFF1DE;--bu:#FFE9A3;--bl:#FFD3DE;--sk:#CDE9FB;--li:#E5D9FF;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:5rem}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Plus Jakarta Sans","Nunito Sans",system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:1.02;margin:0}
+h1{font-size:clamp(2.7rem,9.5vw,5.8rem)}h2{font-size:clamp(1.9rem,5.5vw,3.3rem)}h3{font-size:1.3rem;line-height:1.15}
+a{color:inherit}p{margin:0}
+:focus-visible{outline:3px solid #F2A900;outline-offset:3px}
+.pad{padding-left:clamp(1.25rem,5vw,4rem);padding-right:clamp(1.25rem,5vw,4rem)}
+.w{max-width:70rem;margin:0 auto}
+section{padding-top:clamp(3.5rem,9vw,6.5rem)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(255,253,250,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
+.ti{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+.nl,.nr{display:flex;align-items:center;gap:1.4rem;font-weight:700;font-size:.93rem}.nr{justify-self:end;gap:1.1rem}
+.lk{text-decoration:none;color:var(--mut);padding:.2rem 0;border-bottom:2px solid transparent}
+.lk:hover{color:var(--ink)}.lk[aria-current="page"]{color:var(--ink);border-color:#FFC83D}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;line-height:1.05}
+/* LOGO: the client logo is the file images/logo.jpg (set as --logo above). To change it, replace that file or point --logo at another file. */
+.lg{width:2.6rem;height:2.6rem;border-radius:50%;background:#0B7A4E;color:#fff;display:grid;place-items:center;font:800 1rem "Plus Jakarta Sans",sans-serif;flex:none}
+.logo{display:block;height:clamp(2.9rem,9vw,3.4rem);aspect-ratio:560/335;background:var(--logo) center/contain no-repeat;mix-blend-mode:multiply}
+.logo.big{height:5.2rem}
+.brand b{display:block;font:800 1.1rem "Plus Jakarta Sans",sans-serif}.brand small{display:block;color:var(--mut);font-size:.74rem;font-weight:600}
+.mbtn{display:none;font:700 .9rem "Nunito Sans",sans-serif;background:#fff;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:.5rem 1rem;cursor:pointer}
+@media (max-width:940px){.nl .lk,.nr .lk{display:none}.mbtn{display:inline-block}}
+@media (max-width:520px){.brand small{display:none}.brand b{font-size:1rem}}
+.mp{display:grid;gap:.5rem;padding-bottom:1rem}
+.mp a{display:flex;justify-content:space-between;text-decoration:none;font:800 1.2rem "Plus Jakarta Sans",sans-serif;padding:.9rem 1.1rem;border-radius:18px;background:var(--c)}
+.mp a::after{content:"\2192"}
+@media (min-width:941px){.mp{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--g);color:#fff;font:700 .98rem "Nunito Sans",sans-serif;text-decoration:none;padding:.85rem 1.5rem;border-radius:999px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 rgba(20,41,31,.18)}
+.btn.sm{padding:.55rem 1.1rem;font-size:.9rem}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.y{background:#FFC83D;color:#14291F}
+.hero{position:relative;overflow:hidden;text-align:center;padding-top:clamp(2.5rem,7vw,4.5rem);padding-bottom:clamp(4.5rem,10vw,6rem)}
+.blobs{position:absolute;inset:0;pointer-events:none}
+.blobs i{position:absolute;width:46vmax;height:46vmax;border-radius:50%;filter:blur(70px);opacity:.75;animation:dr 20s ease-in-out infinite alternate}
+.blobs i:nth-child(1){background:#BFF0D6;left:-15%;top:-25%}.blobs i:nth-child(2){background:#FFE49A;right:-15%;top:-10%;animation-delay:-7s}.blobs i:nth-child(3){background:#FFC9D6;left:30%;bottom:-40%;animation-delay:-12s}
+@keyframes dr{to{transform:translate(7vw,5vh) scale(1.12)}}
+.hero .w{position:relative}
+.pill{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:999px;padding:.4rem 1rem;font-weight:700;font-size:.85rem;margin-bottom:1.4rem}
+.hero h1{max-width:13ch;margin:0 auto}
+.hl{background:linear-gradient(transparent 60%,#FFC83D 60%);padding:0 .06em}
+.hero p.s{font-size:1.2rem;color:var(--mut);max-width:34rem;margin:1.4rem auto 1.8rem}
+.row{display:flex;flex-wrap:wrap;gap:.7rem}.row.c{justify-content:center}
+.arches{display:flex;gap:.7rem;justify-content:center;align-items:flex-end;margin-top:clamp(2.2rem,6vw,3.5rem)}
+.arches .fr{flex:1;max-width:14rem;border-radius:999px 999px 28px 28px;animation:fl 6s ease-in-out infinite alternate}
+.arches .fr:nth-child(1){height:clamp(10rem,32vw,16rem)}.arches .fr:nth-child(2){height:clamp(13rem,40vw,20rem);animation-delay:-2s}.arches .fr:nth-child(3){height:clamp(12rem,36vw,18rem);animation-delay:-4s}.arches .fr:nth-child(4){height:clamp(9rem,28vw,14rem);animation-delay:-1s}
+@keyframes fl{to{transform:translateY(-10px)}}
+.fr{position:relative;overflow:hidden;background:var(--c);display:grid;place-items:center}
+.fe{font-size:clamp(2rem,7vw,3.6rem);line-height:1}
+.fr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:.9rem;bottom:.8rem;background:rgba(255,255,255,.92);border-radius:999px;padding:.25rem .8rem;font-weight:700;font-size:.85rem;z-index:2}
+.qb{margin-top:-2.8rem;position:relative;z-index:3}
+.qbar{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));align-items:end;background:#fff;border:1px solid var(--ln);border-radius:28px;padding:1.1rem;box-shadow:0 22px 40px -22px rgba(20,41,31,.35);text-align:left}
+label{display:block;font-weight:700;margin:0 0 .3rem;font-size:.85rem}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1.5px solid var(--ln);border-radius:14px;padding:.7rem .9rem}
+.hd{max-width:36rem;margin-bottom:2.2rem}.hd p{color:var(--mut);margin-top:1rem}
+.zr{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));align-items:center;margin-bottom:clamp(3rem,8vw,5rem)}
+.zp .fr{aspect-ratio:5/4;border-radius:44px}.zp .fe{font-size:clamp(4rem,14vw,7rem)}
+@media (min-width:760px){.zr:nth-child(even) .zp{order:2}}
+.lab{display:inline-block;font:800 .85rem "Plus Jakarta Sans",sans-serif;background:var(--c);border-radius:999px;padding:.3rem .9rem;margin-bottom:1rem}
+.zt p{color:var(--mut);margin:1rem 0 1.2rem}
+.gd{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.5rem}.gd span{border:1.5px solid var(--ln);border-radius:999px;padding:.3rem .9rem;font-weight:600;font-size:.9rem;background:#fff}
+.band{border-radius:44px;padding:clamp(2rem,6vw,4rem)}
+.why{background:var(--bu)}.why .three{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));margin-top:2rem}
+.why p{margin-top:.5rem;color:#3F4B3C}
+.how{background:var(--mint)}
+.stp{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));margin-top:2rem}
+.stp div{background:#fff;border-radius:26px;padding:1.3rem}
+.stp b{display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--g);color:#fff;font:800 1.1rem "Plus Jakarta Sans",sans-serif;margin-bottom:.9rem}
+.stp p{color:var(--mut);margin-top:.3rem;font-size:.97rem}
+.strip{display:flex;gap:.9rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;scrollbar-width:thin}
+.strip .fr{flex:0 0 min(70%,16rem);aspect-ratio:3/4;border-radius:30px;scroll-snap-align:start}
+.gall{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr))}
+.gall .fr{aspect-ratio:1;border-radius:30px}
+.smp{color:var(--mut);font-size:.88rem;margin-top:.8rem}
+.cta{text-align:center;background:linear-gradient(135deg,#CFF1DE,#FFE9A3 55%,#FFD3DE);border-radius:44px;padding:clamp(2.5rem,8vw,5rem) 1.5rem}
+.cta h2{max-width:14ch;margin:0 auto 1.6rem}
+.sh{padding-top:clamp(2.5rem,7vw,4.5rem)}
+.sgrid{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));align-items:center}
+.sgrid h1{font-size:clamp(2.6rem,8.5vw,4.8rem)}.sgrid .tag{font-size:1.25rem;font-weight:700;margin:1rem 0 .8rem}.sgrid .sp{color:var(--mut);margin-bottom:1.4rem}
+.mos{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.mos .fr{border-radius:30px;aspect-ratio:1}.mos .fr:first-child{grid-row:span 2;aspect-ratio:auto;border-radius:999px 999px 30px 30px}
+.lst>div{display:grid;grid-template-columns:auto 1fr auto;gap:1.2rem;align-items:center;padding:1.3rem 0;border-top:1.5px solid var(--ln)}
+.lst>div:last-child{border-bottom:1.5px solid var(--ln)}
+.em{width:3.6rem;height:3.6rem;border-radius:50%;background:var(--c);display:grid;place-items:center;font-size:1.8rem}
+.lst p{color:var(--mut);margin-top:.3rem;font-size:.98rem}
+@media (max-width:620px){.lst>div{grid-template-columns:auto 1fr}.lst .btn{grid-column:1/-1}}
+details{border-top:1.5px solid var(--ln);padding:1.1rem 0}details:last-of-type{border-bottom:1.5px solid var(--ln)}
+summary{cursor:pointer;font:800 1.15rem "Plus Jakarta Sans",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";transition:transform .3s}details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:.6rem;color:var(--mut);max-width:40rem}
+.pg{padding-top:clamp(2.5rem,7vw,4rem)}
+.bk{display:grid;gap:2rem;grid-template-columns:minmax(0,1.6fr) minmax(16rem,1fr);align-items:start}
+@media (max-width:860px){.bk{grid-template-columns:1fr}}
+form.f{background:#fff;border:1px solid var(--ln);border-radius:32px;padding:clamp(1.2rem,4vw,2rem)}
+fieldset{border:0;padding:0;margin:0 0 1.8rem}legend{font:800 1.3rem "Plus Jakarta Sans",sans-serif;margin-bottom:1rem;padding:0}
+legend span{display:inline-grid;place-items:center;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--g);color:#fff;font-size:.9rem;margin-right:.5rem}
+.sg{display:grid;gap:.7rem;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr))}
+.sc{position:relative;display:flex;flex-direction:column;gap:.2rem;border:2px solid var(--ln);border-radius:22px;padding:1rem;cursor:pointer;background:#fff;margin:0;font-size:.95rem;transition:border-color .2s,background .2s}
+.sc input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.sc .e{font-size:1.8rem;line-height:1.1}
+.sc:has(input:checked){border-color:var(--g);background:#E8F8EF}
+.sc:has(input:checked)::after{content:"\2713";position:absolute;top:.6rem;right:.7rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-size:.85rem}
+.sc:focus-within{outline:3px solid #F2A900;outline-offset:2px}
+.fg{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));margin-bottom:1rem}
+.fg>div>label,.f>fieldset>label{margin-top:0}
+.f label.t{margin-top:1rem}
+form.f .btn{width:100%;padding:1rem}
+#sent{margin-top:1rem;padding:1rem 1.2rem;border-radius:18px;border:2px solid var(--g);background:#E8F8EF}
+.sum{background:var(--bu);border-radius:32px;padding:1.6rem}
+@media (min-width:861px){.sum{position:sticky;top:6rem}}
+.sum h3{margin-bottom:1rem}.sum ul{list-style:none;margin:0 0 1rem;padding:0}.sum li{padding:.4rem 0;border-top:1px solid rgba(20,41,31,.15)}
+.sum .none{color:#5A5330}.sum .nx{margin-top:1.2rem;font-size:.95rem;color:#3F4B3C}
+footer{margin-top:clamp(3.5rem,9vw,6rem);padding-top:2.5rem;padding-bottom:6rem;border-top:1px solid var(--ln)}
+.fc{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr))}
+.fc b{display:block;font:800 1rem "Plus Jakarta Sans",sans-serif;margin-bottom:.5rem}.fc a{display:block;text-decoration:none;color:var(--mut);padding:.15rem 0;word-break:break-word}.fc a:hover{color:var(--ink)}.fc p{color:var(--mut)}
+.cp{margin-top:2rem;color:var(--mut);font-size:.88rem}
+.wa{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:.5rem;background:#25D366;color:#06210F;font-weight:800;text-decoration:none;padding:.8rem 1.2rem;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.22)}
+.wa svg{width:1.3rem;height:1.3rem;fill:currentColor}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+.hero .w>*:not(.arches){animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .w>*:nth-child(2){animation-delay:.1s}.hero .w>*:nth-child(3){animation-delay:.2s}.hero .w>*:nth-child(4){animation-delay:.3s}.hero .w>*:nth-child(5){animation-delay:.4s}
+@keyframes up{from{opacity:0;translate:0 26px}}
+.hl{background:linear-gradient(transparent 60%,#FFC83D 60%) no-repeat;background-size:0 100%;animation:ink 1s .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes ink{to{background-size:100% 100%}}
+.arches .fr{box-shadow:0 22px 30px -20px rgba(20,41,31,.4);animation:pop 1s cubic-bezier(.2,1.25,.3,1) both,fl 4.5s ease-in-out 1.3s infinite alternate;transition:scale .3s}
+.arches .fr:hover{scale:1.07}
+.arches .fr:nth-child(1){animation-delay:.2s,1.3s;--rr:-3deg}
+.arches .fr:nth-child(2){animation-delay:.35s,1.8s;--rr:2.5deg}
+.arches .fr:nth-child(3){animation-delay:.5s,1.1s;--rr:-2.5deg}
+.arches .fr:nth-child(4){animation-delay:.65s,1.6s;--rr:3deg}
+@keyframes pop{from{opacity:0;translate:0 90px;scale:.75}}
+@keyframes fl{to{transform:translateY(-20px) rotate(var(--rr,2deg))}}
+.arches .fe{display:inline-block;animation:wig 2.4s ease-in-out infinite}
+.arches .fr:nth-child(2) .fe{animation-delay:-.6s}.arches .fr:nth-child(3) .fe{animation-delay:-1.2s}.arches .fr:nth-child(4) .fe{animation-delay:-1.8s}
+@keyframes wig{0%,100%{transform:rotate(-10deg) scale(1)}50%{transform:rotate(10deg) scale(1.2)}}
+.cf{position:absolute;top:-4%;width:.55rem;height:.95rem;border-radius:2px;opacity:.9;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(125vh) rotate(560deg)}}
+.sl{position:relative}
+.sbtn{position:absolute;top:calc(50% - .5rem);translate:0 -50%;width:2.8rem;height:2.8rem;border-radius:50%;border:0;background:#fff;color:var(--ink);box-shadow:0 6px 16px rgba(20,41,31,.28);font:800 1.6rem/1 "Plus Jakarta Sans",sans-serif;cursor:pointer;z-index:3;transition:transform .2s}
+.sbtn:hover{transform:scale(1.08)}.sbtn.p{left:.5rem}.sbtn.n{right:.5rem}
+.sctl{display:flex;justify-content:center;margin-top:.4rem}
+.spause{font:700 .85rem "Nunito Sans",sans-serif;background:#fff;color:var(--ink);border:1.5px solid var(--ln);border-radius:999px;padding:.4rem 1.1rem;cursor:pointer}
+.ct{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));margin-bottom:2rem}
+.ct:empty{display:none}
+.ci{display:flex;gap:1rem;align-items:center;text-decoration:none;background:var(--c);border-radius:26px;padding:1.2rem 1.3rem;transition:transform .25s}
+.ci:hover{transform:translateY(-4px)}.ci .em{background:#fff;flex:none}
+.ci b{display:block;font:800 1.05rem "Plus Jakarta Sans",sans-serif}.ci div span{display:block;color:#3F4B3C;font-size:.95rem;word-break:break-word}
+.cg{display:grid;gap:2rem;grid-template-columns:minmax(0,1.5fr) minmax(15rem,1fr);align-items:start}
+@media (max-width:860px){.cg{grid-template-columns:1fr}}
+.cside{background:var(--bu);border-radius:32px;padding:1.6rem}.cside p{color:#3F4B3C;margin-top:.7rem}
+.fq-b{position:fixed;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:.5rem;background:#FFC83D;color:#14291F;font:800 1rem "Nunito Sans",sans-serif;border:0;padding:.8rem 1.2rem;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.22);cursor:pointer;transition:transform .2s}
+.fq-b:hover{transform:translateY(-2px)}
+.fq-b i{font-style:normal;display:grid;place-items:center;width:1.5rem;height:1.5rem;border-radius:50%;background:#14291F;color:#FFC83D;font:800 .95rem "Plus Jakarta Sans",sans-serif}
+.fq-p{position:fixed;left:.8rem;right:.8rem;bottom:calc(5rem + env(safe-area-inset-bottom,0px));z-index:45;max-height:min(72vh,38rem);overflow:auto;background:#fff;border:1px solid var(--ln);border-radius:28px;box-shadow:0 26px 60px -16px rgba(20,41,31,.5);padding:1.2rem 1.2rem 1.4rem;animation:pu .3s cubic-bezier(.2,.7,.2,1)}
+@keyframes pu{from{opacity:0;translate:0 16px}}
+@media (min-width:600px){.fq-p{right:auto;left:1rem;width:26rem}}
+.fq-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem}.fq-h h3{font-size:1.4rem}
+.fq-x{width:2.4rem;height:2.4rem;border-radius:50%;border:1.5px solid var(--ln);background:#fff;color:var(--ink);font-size:1.1rem;cursor:pointer}
+.fq-p h4{margin:1.1rem 0 .2rem;font:800 .8rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
+.fq-p details{padding:.8rem 0}.fq-p summary{font-size:1rem}.fq-p details p{font-size:.95rem}
+.fq-f{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.m3{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:.6rem;aspect-ratio:5/4}
+.m3 .fr{aspect-ratio:auto;height:100%;border-radius:26px}
+.m3 .fr:first-child{grid-row:span 2}
+.m3 .fe{font-size:clamp(2rem,8vw,3.4rem)}
+.cartb{position:relative;width:2.6rem;height:2.6rem;border-radius:50%;border:1.5px solid var(--ink);background:#fff;display:grid;place-items:center;cursor:pointer;color:var(--ink);flex:none}
+.cartb svg{width:1.3rem;height:1.3rem;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cn{position:absolute;top:-.4rem;right:-.4rem;min-width:1.3rem;height:1.3rem;padding:0 .3rem;border-radius:999px;background:var(--g);color:#fff;font:800 .72rem/1.3rem "Plus Jakarta Sans",sans-serif;text-align:center}
+.cn.bump{animation:bump .4s}
+@keyframes bump{50%{transform:scale(1.45)}}
+@media (max-width:1180px){.nl,.nr{gap:.9rem;font-size:.86rem}}
+@media (max-width:480px){.nr{gap:.5rem}.nr .btn.sm{padding:.5rem .8rem;font-size:.82rem}.cartb{width:2.3rem;height:2.3rem}}
+.sbanner{background:var(--bu);border-radius:16px;padding:.7rem 1rem;font-weight:700;font-size:.92rem;margin-bottom:1rem}
+.stools{display:grid;gap:.8rem;margin-bottom:1.4rem}
+.chips{display:flex;gap:.4rem;flex-wrap:wrap}
+.chip{border:1.5px solid var(--ln);background:#fff;color:var(--ink);border-radius:999px;padding:.45rem 1rem;font:700 .9rem "Nunito Sans",sans-serif;cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pgrid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.pc{background:#fff;border:1px solid var(--ln);border-radius:28px;overflow:hidden;display:flex;flex-direction:column}
+.pi{position:relative;aspect-ratio:1}.pi .fr{position:absolute;inset:0;border-radius:0}
+.oos{position:absolute;top:.8rem;left:.8rem;background:#fff;border-radius:999px;padding:.2rem .8rem;font-weight:800;font-size:.8rem;z-index:2}
+.pb{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.pcat{font:800 .72rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
+.pb h3{font-size:1.3rem}.pb p{color:var(--mut);font-size:.93rem;flex:1}
+.pf{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-top:.8rem;flex-wrap:wrap}
+.pr{font:800 1.25rem "Plus Jakarta Sans",sans-serif}.pf small{color:var(--mut)}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;margin-top:.3rem}
+.qty button{width:2.2rem;height:2.2rem;border:0;background:transparent;font-size:1.2rem;cursor:pointer;color:var(--ink)}
+.qty span{min-width:1.8rem;text-align:center;font-weight:800}
+.dov{position:fixed;inset:0;background:rgba(20,41,31,.5);z-index:55}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(26rem,100%);background:#fff;z-index:60;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:-20px 0 50px -20px rgba(20,41,31,.5);animation:dr2 .3s cubic-bezier(.2,.7,.2,1)}
+@keyframes dr2{from{translate:100% 0}}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;border-bottom:1px solid var(--ln)}
+.dxb{width:2.4rem;height:2.4rem;border-radius:50%;border:1.5px solid var(--ln);background:#fff;cursor:pointer;color:var(--ink)}
+.dl{flex:1;overflow:auto;padding:.5rem 1.3rem}
+.cl{display:grid;grid-template-columns:4rem 1fr auto;gap:.9rem;align-items:center;padding:.9rem 0;border-bottom:1px solid var(--ln)}
+.cth{width:4rem;height:4rem;border-radius:16px;overflow:hidden;position:relative}.cth .fr{position:absolute;inset:0;border-radius:0}.cth .fe{font-size:1.6rem}
+.cl small{display:block;color:var(--mut)}
+.cs{text-align:right;font-weight:800}.cs button{display:block;margin-left:auto;background:none;border:0;color:var(--mut);text-decoration:underline;cursor:pointer;font-size:.8rem;margin-top:.3rem}
+.df{padding:1.1rem 1.3rem 1.3rem;border-top:1px solid var(--ln);background:var(--bg)}
+.trow{display:flex;justify-content:space-between;padding:.2rem 0}.trow.t{font:800 1.2rem "Plus Jakarta Sans",sans-serif;padding-top:.6rem}
+.empty2{text-align:center;color:var(--mut);padding:2.5rem 0}
+.ck{display:grid;gap:2rem;grid-template-columns:minmax(0,1.5fr) minmax(16rem,1fr);align-items:start}
+@media (max-width:860px){.ck{grid-template-columns:1fr}.ordsum{order:-1}}
+.ordsum{background:var(--bu);border-radius:32px;padding:1.6rem}
+@media (min-width:861px){.ordsum{position:sticky;top:6rem}}
+.ordsum h3{margin-bottom:.6rem}.ordsum .cl{border-color:rgba(20,41,31,.15)}.ordsum .qty{background:#fff}
+.payinfo{background:#E8F8EF;border:1.5px solid var(--g);border-radius:18px;padding:1rem 1.2rem;font-size:.95rem}
+.done{text-align:center;background:#E8F8EF;border:2px solid var(--g);border-radius:32px;padding:clamp(2rem,6vw,4rem)}
+.done pre{text-align:left;white-space:pre-wrap;background:#fff;border-radius:18px;padding:1rem 1.2rem;margin:1.4rem auto;max-width:30rem;font:inherit}
+.sstrip{align-items:stretch}
+.sstrip .pc{flex:0 0 min(78%,16.5rem);scroll-snap-align:start}
+.sctl{align-items:center;flex-wrap:wrap;gap:.4rem}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.rvw{position:relative;overflow:hidden;background:#fff;border:1px solid var(--ln);border-radius:44px;padding:clamp(1.8rem,6vw,4rem);text-align:center;box-shadow:0 30px 60px -40px rgba(20,41,31,.4)}
+.rvw::before{content:"";position:absolute;top:-8rem;right:-6rem;width:22rem;height:22rem;border-radius:50%;background:radial-gradient(circle,rgba(255,200,61,.4),transparent 65%);pointer-events:none}
+.rvw::after{content:"";position:absolute;bottom:-9rem;left:-7rem;width:22rem;height:22rem;border-radius:50%;background:radial-gradient(circle,rgba(255,111,145,.25),transparent 65%);pointer-events:none}
+.rvw>*{position:relative;z-index:1}
+.rvh p{color:var(--mut);max-width:30rem;margin:1rem auto 0}
+.rvf{max-width:34rem;margin:2rem auto 0;text-align:left}
+.rate{border:0;padding:0;margin:0 0 1.4rem;text-align:center}
+.rate legend{float:none;font:800 .85rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin:0 auto .8rem;padding:0}
+.stars{position:relative;display:flex;flex-direction:row-reverse;justify-content:center;gap:clamp(.1rem,1.5vw,.5rem)}
+.stars input{position:absolute;opacity:0;pointer-events:none}
+.stars label{display:block;width:clamp(2.6rem,13vw,4rem);height:clamp(2.6rem,13vw,4rem);margin:0;cursor:pointer;transition:transform .25s}
+.stars svg{display:block;width:100%;height:100%;fill:#E8E6D8;stroke:#CFCBB5;stroke-width:1;stroke-linejoin:round;transition:transform .25s cubic-bezier(.2,1.6,.4,1),fill .2s;overflow:visible}
+.stars label:hover svg,.stars label:hover~label svg,.stars input:checked~label svg{fill:url(#goldg);stroke:#E0A100;filter:drop-shadow(0 5px 8px rgba(224,161,0,.45))}
+.stars label:hover svg{transform:scale(1.22) rotate(-8deg)}
+.stars input:focus-visible+label{outline:3px solid #F2A900;outline-offset:3px;border-radius:12px}
+.stars label.pop{animation:starpop .6s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes starpop{0%{transform:scale(1)}35%{transform:scale(1.55) rotate(-14deg)}65%{transform:scale(.88) rotate(7deg)}100%{transform:scale(1) rotate(0)}}
+.stars:not(.rated) label svg{animation:twk 3s ease-in-out infinite}
+.stars:not(.rated) label:nth-of-type(5) svg{animation-delay:0s}.stars:not(.rated) label:nth-of-type(4) svg{animation-delay:.18s}.stars:not(.rated) label:nth-of-type(3) svg{animation-delay:.36s}.stars:not(.rated) label:nth-of-type(2) svg{animation-delay:.54s}.stars:not(.rated) label:nth-of-type(1) svg{animation-delay:.72s}
+@keyframes twk{0%,55%,100%{transform:scale(1) rotate(0);fill:#E8E6D8}22%{transform:scale(1.2) rotate(-9deg);fill:#FFE39A}38%{transform:scale(1) rotate(0)}}
+.stars.shake{animation:shake .5s}
+@keyframes shake{20%,60%{transform:translateX(-9px)}40%,80%{transform:translateX(9px)}}
+.sp{position:absolute;width:.55rem;height:.55rem;border-radius:50%;pointer-events:none;z-index:3;animation:spark .85s ease-out forwards}
+@keyframes spark{from{opacity:1;transform:translate(-50%,-50%) scale(1)}to{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(.2)}}
+.rlab{min-height:2rem;margin-top:.8rem;font:800 1.1rem "Plus Jakarta Sans",sans-serif}
+.remo{display:inline-block;font-size:1.5rem;vertical-align:middle;animation:emo .6s cubic-bezier(.2,1.6,.4,1)}
+@keyframes emo{from{transform:scale(0) rotate(-35deg)}}
+.rvck{display:flex;gap:.6rem;align-items:center;margin-top:1rem;font-weight:600}.rvck input{width:auto;accent-color:var(--g)}
+.rvdone{padding:1rem 0}
+.rvdone .tick{width:5rem;height:5rem;border-radius:50%;background:var(--g);margin:0 auto 1.2rem;display:grid;place-items:center;animation:emo .7s cubic-bezier(.2,1.6,.4,1)}
+.rvdone .tick svg{width:2.8rem;height:2.8rem;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:30;stroke-dashoffset:30;animation:dash .6s .3s ease forwards}
+@keyframes dash{to{stroke-dashoffset:0}}
+.rvgot{font-size:2.2rem;letter-spacing:.2em;background:linear-gradient(100deg,#FFC83D,#FF9A3D);-webkit-background-clip:text;background-clip:text;color:transparent;margin:.6rem 0}
+.rvdone p{color:var(--mut);margin-bottom:1.2rem}.rvdone .rvgot{margin-bottom:.6rem}
+.nores{text-align:center;background:#fff;border:1.5px dashed var(--ln);border-radius:24px;padding:2rem 1.2rem;margin-top:1rem}
+.nores p{margin:.3rem 0}.nores a{color:var(--g);font-weight:800;text-decoration:underline}
+.plusc{text-decoration:none;color:inherit;transition:transform .25s,border-color .25s}
+.plusc:hover{transform:translateY(-4px);border-color:var(--g)}
+.plusc .pi{display:grid;place-items:center;background:#fff;border-bottom:1.5px dashed var(--ln)}
+.plusc .plus{width:52%;height:52%;overflow:visible;fill:none;stroke-linecap:round}
+.plusc .plus circle{stroke:var(--ln);stroke-width:1.6;stroke-dasharray:2.5 7;transform-origin:center;transform-box:fill-box;animation:spin 24s linear infinite}
+.plusc .plus path{stroke:url(#plusg);stroke-width:3;transform-origin:center;transform-box:fill-box;transition:transform .5s cubic-bezier(.2,1.4,.4,1)}
+.plusc:hover .plus path{transform:rotate(90deg) scale(1.1)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.plusc .btn{pointer-events:none}
+.rcar{max-width:46rem;margin:0 auto}
+.rview{min-height:15rem}
+.rqc{margin:0;position:relative;overflow:hidden;background:linear-gradient(135deg,#FFF6D8,#FFE3EA);border-radius:40px;padding:clamp(1.6rem,5vw,3rem);text-align:center;animation:rqin .6s cubic-bezier(.2,.7,.2,1)}
+@keyframes rqin{from{opacity:0;translate:36px 0}}
+.rqc .qm{font:800 7rem/.7 "Plus Jakarta Sans",serif;color:rgba(11,122,78,.2);height:2.6rem}
+.rst{font-size:1.6rem;letter-spacing:.15em;background:linear-gradient(100deg,#FFC83D,#FF9A3D);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:.4rem}
+.rqc blockquote{margin:1rem 0 1.5rem;font:700 clamp(1.15rem,3.6vw,1.6rem)/1.35 "Plus Jakarta Sans",sans-serif;letter-spacing:-.01em}
+.rqc figcaption{display:flex;align-items:center;justify-content:center;gap:.8rem;text-align:left}
+.rav{width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;background:var(--c);font:800 1.2rem "Plus Jakarta Sans",sans-serif;color:#14291F;flex:none}
+.rqc small{display:block;color:var(--mut)}
+.rsamp{display:inline-block;background:#fff;border-radius:999px;padding:.15rem .75rem;font-size:.75rem;font-weight:800;margin-bottom:.4rem}
+.rnav{display:flex;justify-content:center;align-items:center;gap:1rem;margin-top:1.2rem}
+.rb{width:2.8rem;height:2.8rem;border-radius:50%;border:1.5px solid var(--ink);background:#fff;font:800 1.5rem/1 "Plus Jakarta Sans",sans-serif;cursor:pointer;color:var(--ink);transition:transform .2s}
+.rb:hover{transform:scale(1.1)}
+.rdots{display:flex;gap:.45rem;align-items:center}
+.rdots button{width:.7rem;height:.7rem;border-radius:50%;border:0;background:rgba(20,41,31,.2);padding:0;cursor:pointer;transition:width .3s,background .3s}
+.rdots button.on{width:1.8rem;border-radius:999px;background:var(--g)}
+.payopts{display:grid;gap:.7rem;margin-bottom:1rem}
+.po{display:grid;grid-template-columns:auto 1fr;gap:.15rem .8rem;border:2px solid var(--ln);border-radius:20px;padding:1rem 1.1rem;cursor:pointer;background:#fff;margin:0;font-weight:400}
+.po input{grid-row:span 2;width:1.2rem;height:1.2rem;padding:0;border:0;margin:.2rem 0 0;accent-color:var(--g)}
+.po .pot{font:800 1.05rem "Plus Jakarta Sans",sans-serif}
+.po .pod{color:var(--mut);font-size:.92rem;grid-column:2}
+.po:has(input:checked){border-color:var(--g);background:#E8F8EF}
+.po.off{opacity:.55;cursor:not-allowed}
+.bankbox{background:#fff;border-radius:22px;padding:1.2rem 1.4rem;margin:1.2rem auto;max-width:30rem;text-align:left}
+.bankbox h3{margin-bottom:.6rem}.bankbox p{margin:.3rem 0;color:var(--ink)}
+.gall{display:block;column-count:2;column-gap:.9rem}
+@media (min-width:700px){.gall{column-count:3}}
+@media (min-width:1050px){.gall{column-count:4}}
+.gi{position:relative;display:grid;place-items:center;break-inside:avoid;margin:0 0 .9rem;border-radius:26px;overflow:hidden;background:var(--c);min-height:9rem}
+.gi .fe{position:absolute;inset:0;display:grid;place-items:center}
+.gi img{position:relative;display:block;width:100%;height:auto}
+/* ===== tap a shop or gallery photo to enlarge it ===== */
+.pi:has(img),.gi{cursor:zoom-in}
+.pi:has(img)::after,.gi::after{content:"";position:absolute;right:.7rem;bottom:.7rem;width:2.2rem;height:2.2rem;border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23123123' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6'/%3E%3Cpath d='M15 15l5 5M10.5 8v5M8 10.5h5'/%3E%3C/svg%3E") center/62% no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.18);pointer-events:none;z-index:2}
+#lb{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.9rem;padding:calc(env(safe-area-inset-top,0px) + 4.2rem) 1rem calc(env(safe-area-inset-bottom,0px) + 1rem);background:rgba(8,16,12,.97);animation:lbin .18s ease-out}
+#lb[hidden]{display:none}
+#lb img{max-width:min(96vw,1100px);max-height:calc(100dvh - 9rem);width:auto;height:auto;object-fit:contain;border-radius:18px;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+#lb .lbc{color:#fff;font-weight:700;font-size:1.05rem;text-align:center;max-width:90vw}
+#lb .lbx{position:absolute;top:calc(env(safe-area-inset-top,0px) + .8rem);right:.9rem;width:3.1rem;height:3.1rem;border-radius:50%;border:0;background:#fff;color:#123123;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.35)}
+#lb .lbx svg{width:1.4rem;height:1.4rem}
+#lb .lbx:focus-visible{outline:3px solid #FFC83D;outline-offset:2px}
+@keyframes lbin{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){#lb{animation:none}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.blobs i,.arches .fr,.arches .fe,.hero .w>*,.cf,.fq-p,.drawer,.cn,.rqc,.plusc .plus circle,.stars label,.stars svg,.stars,.remo,.sp,.rvdone .tick,.rvdone .tick svg{animation:none!important}.rvdone .tick svg{stroke-dashoffset:0}.hl{background-size:100% 100%}}
+</style>
+</head>
+<body>
+<header class="top"><div class="ti pad">
+  <div class="nl"><button class="mbtn" id="mb" aria-expanded="false" aria-controls="mp">Menu</button><a class="lk" href="#home">Home</a><a class="lk" href="#shop">Shop</a><a class="lk" href="#decor">Decor</a><a class="lk" href="#cakes">Cakes &amp; snacks</a></div>
+  <a class="brand" href="#home" aria-label="Roykid Events and Errand, home"><span class="logo" role="img" aria-label="Roykid Events and Errand logo"></span></a>
+  <div class="nr"><a class="lk" href="#catering">Catering</a><a class="lk" href="#errands">Errands</a><a class="lk" href="#gallery">Gallery</a><a class="lk" href="#contact">Contact</a><button class="cartb" id="cartb" type="button" aria-label="Open your cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cn" id="cartn" hidden>0</span></button><a class="btn sm" href="#book">Book now</a></div>
+</div>
+<nav class="mp pad" id="mp" aria-label="Menu" hidden>
+  <a href="#home" style="--c:var(--mint)">Home</a><a href="#shop" style="--c:var(--sk)">Shop</a><a href="#decor" style="--c:var(--bu)">Decor &amp; celebrations</a><a href="#cakes" style="--c:var(--bl)">Cakes &amp; snacks</a><a href="#catering" style="--c:var(--mint)">Party catering</a><a href="#errands" style="--c:var(--sk)">Errands &amp; hampers</a><a href="#gallery" style="--c:var(--li)">Gallery</a><a href="#contact" style="--c:var(--bu)">Contact us</a>
+</nav></header>
+
+<main>
+<div data-page="home">
+  <div class="hero pad"><div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div><div class="w">
+    <span class="pill">Decor &middot; Cakes &middot; Catering &middot; Errands</span>
+    <h1>Beautiful events. <span class="hl">Zero stress.</span></h1>
+    <p class="s">Roykid Event &amp; Errands takes care of the decor, the cake, the food, and the running around, so you can enjoy your day.</p>
+    <div class="row c"><a class="btn" href="#book">Book now</a><a class="btn o" href="#services">Explore services</a></div>
+    <div class="arches" id="harch" aria-hidden="true"></div>
+  </div></div>
+  <div class="qb pad"><form class="w qbar" id="qf">
+    <div><label for="qs">What do you need?</label><select id="qs"></select></div>
+    <div><label for="qd">Date</label><input id="qd" type="date"></div>
+    <button class="btn" type="submit">Check and book</button>
+  </form></div>
+
+  <section id="services" class="pad"><div class="w"><div class="hd rv"><h2>Everything for your celebration</h2><p>Four services, one team. Tap one to see more and book.</p></div><div id="zz"></div></div></section>
+
+  <section class="pad"><div class="w"><div class="band why rv"><h2>Why Roykid</h2><div class="three">
+    <div><h3>One team, many services</h3><p>Decor, cake, food, and errands handled in one place.</p></div>
+    <div><h3>Simple online booking</h3><p>Pick your services and send your date in minutes.</p></div>
+    <div><h3>We do the running around</h3><p>From shopping to setting up, we take it off your plate.</p></div>
+  </div></div></div></section>
+
+  <section class="pad"><div class="w"><div class="band how rv"><h2>How it works</h2><div class="stp" id="hs"></div></div></div></section>
+
+  <section class="pad"><div class="w"><div class="hd rv"><h2>Our work</h2></div><div class="sl rv"><div class="strip" id="hstrip" tabindex="0" aria-label="Our work slideshow. Swipe or use the arrows."></div><button class="sbtn p" type="button" aria-label="Previous photo">&#8249;</button><button class="sbtn n" type="button" aria-label="Next photo">&#8250;</button></div><div class="sctl"><button class="spause" id="spause" type="button">Pause</button></div><p class="smp">Photos of our work will appear here.</p></div></section>
+
+  <section class="pad"><div class="w"><div class="hd rv"><h2>Our shop</h2><p>A few favourites. Add them to your cart right here.</p></div>
+    <div class="sl rv"><div class="strip sstrip" id="sstrip" tabindex="0" aria-label="Shop slideshow. Swipe or use the arrows."></div><button class="sbtn p" type="button" aria-label="Previous item">&#8249;</button><button class="sbtn n" type="button" aria-label="Next item">&#8250;</button></div>
+    <div class="sctl"><button class="spause" id="spause2" type="button">Pause</button><a class="btn o sm" style="margin-left:.6rem" href="#shop">See the whole shop</a></div>
+  </div></section>
+
+  <section class="pad"><div class="w"><div class="cta rv"><h2>Let's talk about your day.</h2><div class="row c"><a class="btn" href="#contact">Contact us</a><span id="cwa"></span></div></div></div></section>
+
+  <section id="reviewlist" class="pad" hidden><div class="w"><div class="hd rv"><h2>What people say</h2><p>Recent reviews from our customers.</p></div>
+    <div class="rcar rv"><div class="rview" id="rview" aria-live="polite"></div>
+      <div class="rnav"><button class="rb" type="button" id="rprev" aria-label="Previous review">&#8249;</button><div class="rdots" id="rdots"></div><button class="rb" type="button" id="rnext" aria-label="Next review">&#8250;</button></div></div>
+  </div></section>
+
+  <section id="review" class="pad"><div class="w"><div class="rvw rv">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="goldg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE27A"/><stop offset="1" stop-color="#FFB300"/></linearGradient></defs></svg>
+    <div class="rvh"><h2>Loved your experience?</h2><p>Rate us and tell us how we did. It takes a minute and helps us a lot.</p></div>
+    <form class="rvf" id="rvf" name="review" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="review"><p style="display:none"><label>Leave this empty <input name="bot-field"></label></p>
+      <fieldset class="rate"><legend>Your rating</legend>
+        <div class="stars" id="stars"><input type="radio" name="rating" id="st5" value="5"><label for="st5" title="5 stars"><span class="vh">5 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></label><input type="radio" name="rating" id="st4" value="4"><label for="st4" title="4 stars"><span class="vh">4 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></label><input type="radio" name="rating" id="st3" value="3"><label for="st3" title="3 stars"><span class="vh">3 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></label><input type="radio" name="rating" id="st2" value="2"><label for="st2" title="2 stars"><span class="vh">2 stars</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></label><input type="radio" name="rating" id="st1" value="1"><label for="st1" title="1 star"><span class="vh">1 star</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></label></div>
+        <p class="rlab" id="rlab" aria-live="polite">Tap a star to rate us</p>
+      </fieldset>
+      <div class="fg"><div><label for="rv_name">Your name</label><input id="rv_name" name="name" required autocomplete="name"></div><div><label for="rv_svc">What did you use?</label><select id="rv_svc" name="service"><option>Decor and celebrations</option><option>Cakes and snacks</option><option>Party catering</option><option>Errands and hampers</option><option>A shop order</option><option>Something else</option></select></div></div>
+      <label class="t" for="rv_msg">Your review</label><textarea id="rv_msg" name="message" rows="4" required placeholder="Tell us what you liked, or what we can do better"></textarea>
+      <label class="rvck"><input type="checkbox" name="can_publish" value="yes"> You may show my review on your website</label>
+      <button class="btn" type="submit" style="width:100%;margin-top:1.2rem">Send my review</button>
+    </form>
+    <p id="rvsent" role="status" hidden style="margin-top:1rem"></p>
+    <div class="rvdone" id="rvdone" hidden><div class="tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4 10-10"/></svg></div><h2>Thank you!</h2><p class="rvgot" id="rvgot" aria-hidden="true"></p><p>Your review has been sent. We really appreciate it.</p><button class="btn o" type="button" id="rvagain">Send another review</button></div>
+  </div></div></section>
+</div>
+
+<div data-page="service" hidden><div id="svc"></div></div>
+
+<div data-page="gallery" hidden><div class="pad pg"><div class="w"><div class="hd rv"><h1 style="font-size:clamp(2.6rem,9vw,4.6rem)">Our work</h1><p>A look at our decor, cakes, food, and hampers.</p></div><div class="gall rv" id="gall"></div><p class="smp">Photos of our work will appear here.</p></div></div></div>
+
+<div data-page="book" hidden><div class="pad pg"><div class="w">
+  <div class="hd rv"><h1 style="font-size:clamp(2.6rem,9vw,4.6rem)">Book a service</h1><p>Choose what you need, tell us when, and we will send you a quote.</p></div>
+  <div class="bk">
+    <div>
+      <form class="f" id="rf" name="booking" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="booking"><p style="display:none"><label>Leave this empty <input name="bot-field"></label></p>
+        <fieldset><legend><span>1</span>What do you need?</legend><div class="sg" id="sg"><label class="sc"><input type="checkbox" name="services" value="Event decoration"><span class="e" aria-hidden="true">🎈</span><b>Event decoration</b></label><label class="sc"><input type="checkbox" name="services" value="Wedding decor"><span class="e" aria-hidden="true">💐</span><b>Wedding decor</b></label><label class="sc"><input type="checkbox" name="services" value="Surprise party setup"><span class="e" aria-hidden="true">🎁</span><b>Surprise party setup</b></label><label class="sc"><input type="checkbox" name="services" value="Cake making"><span class="e" aria-hidden="true">🎂</span><b>Cake making</b></label><label class="sc"><input type="checkbox" name="services" value="Doughnuts"><span class="e" aria-hidden="true">🍩</span><b>Doughnuts</b></label><label class="sc"><input type="checkbox" name="services" value="Small chops"><span class="e" aria-hidden="true">🥟</span><b>Small chops</b></label><label class="sc"><input type="checkbox" name="services" value="Party food"><span class="e" aria-hidden="true">🍲</span><b>Party food</b></label><label class="sc"><input type="checkbox" name="services" value="Foodstuff shopping and delivery"><span class="e" aria-hidden="true">🛒</span><b>Foodstuff shopping and delivery</b></label><label class="sc"><input type="checkbox" name="services" value="Food hamper"><span class="e" aria-hidden="true">🧺</span><b>Food hamper</b></label></div></fieldset>
+        <fieldset><legend><span>2</span>Your event</legend>
+          <div class="fg"><div><label for="oc">Occasion</label><select id="oc" name="occasion"><option>Wedding</option><option>Birthday</option><option>Surprise party</option><option>Other event</option><option>Errand or hamper only</option></select></div><div><label for="dt">Date needed</label><input id="dt" name="date" type="date" required></div></div>
+          <div class="fg"><div><label for="tm">Time (optional)</label><input id="tm" name="time" type="time"></div><div><label for="gs">Number of guests</label><input id="gs" name="guests" type="number" min="1" placeholder="If it applies"></div></div>
+          <label for="lc">Venue or delivery area</label><input id="lc" name="location" required>
+          <label class="t" for="bd">Budget (optional)</label><input id="bd" name="budget" placeholder="For example, ₦150,000">
+          <label class="t" for="dd">More details</label><textarea id="dd" name="details" rows="3" placeholder="Theme, colours, menu, your shopping list, anything we should know"></textarea>
+        </fieldset>
+        <fieldset><legend><span>3</span>Your details</legend>
+          <label for="nm">Your name</label><input id="nm" name="name" required autocomplete="name">
+          <div class="fg" style="margin-top:1rem"><div><label for="ph">Phone or WhatsApp</label><input id="ph" name="phone" type="tel" required autocomplete="tel"></div><div><label for="em">Email (optional)</label><input id="em" name="email" type="email" autocomplete="email"></div></div>
+        </fieldset>
+        <button class="btn" type="submit">Send booking request</button>
+      </form>
+      <p id="sent" role="status" hidden></p>
+    </div>
+    <aside class="sum" aria-live="polite"><h3>Your request</h3><ul id="sl"></ul><p id="sd"></p><p class="nx">After you send it, we check the date, then reply with a clear quote. Once you agree, we get to work.</p><div style="margin-top:1.2rem" id="swa"></div></aside>
+  </div>
+</div></div></div>
+<div data-page="shop" hidden><div class="pad pg"><div class="w">
+  <div class="hd rv"><h1 style="font-size:clamp(2.6rem,9vw,4.6rem)">Shop</h1><p>Foodstuff, hampers, and snacks. Add what you need to your cart, then check out.</p></div>
+  <p class="sbanner" id="shopbanner" hidden>Some items and prices here are still samples. The final list will replace them before launch.</p>
+  <div class="stools"><input type="search" id="shopq" placeholder="Search the shop" aria-label="Search the shop"><div class="chips" id="shopchips" role="group" aria-label="Categories"></div></div>
+  <div class="pgrid" id="shopgrid"></div>
+  <div class="nores" id="shopnone" hidden></div>
+  <p class="smp" id="shopnote"></p>
+</div></div></div>
+
+<div data-page="checkout" hidden><div class="pad pg"><div class="w">
+  <div class="hd rv"><h1 style="font-size:clamp(2.6rem,9vw,4.6rem)">Checkout</h1><p>Check your order, add your delivery details, and place your order.</p></div>
+  <div id="ckempty" hidden class="done" style="background:#fff;border-color:var(--ln)"><h3>Your cart is empty</h3><p style="margin:.6rem 0 1.2rem;color:var(--mut)">Add something from the shop first.</p><a class="btn" href="#shop">Go to the shop</a></div>
+  <div id="ckdone" hidden class="done"><h2 style="margin-bottom:.8rem">Thank you!</h2><p id="ckmsg"></p><div class="bankbox" id="ckbank" hidden></div><a class="btn" id="ckwa" hidden target="_blank" rel="noopener" style="margin-bottom:.8rem">Tell us on WhatsApp that you have paid</a><pre id="ckrec"></pre><a class="btn" href="#shop">Keep shopping</a></div>
+  <div class="ck" id="ckwrap" hidden>
+    <div>
+      <form class="f" id="orf" name="order" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="order"><p style="display:none"><label>Leave this empty <input name="bot-field"></label></p>
+        <input type="hidden" name="order_number" id="f_num"><input type="hidden" name="items" id="f_items"><input type="hidden" name="total" id="f_total"><input type="hidden" name="payment" id="f_pay"><input type="hidden" name="payment_reference" id="f_ref"><input type="hidden" name="payment_method" id="f_method">
+        <fieldset><legend><span>1</span>Your details</legend>
+          <label for="f_name">Your name</label><input id="f_name" name="name" required autocomplete="name">
+          <div class="fg" style="margin-top:1rem"><div><label for="f_phone">Phone or WhatsApp</label><input id="f_phone" name="phone" type="tel" required autocomplete="tel"></div><div><label for="f_email">Email</label><input id="f_email" name="email" type="email" autocomplete="email"></div></div>
+        </fieldset>
+        <fieldset><legend><span>2</span>Delivery</legend>
+          <label for="f_addr">Delivery address or area</label><textarea id="f_addr" name="address" rows="3" required autocomplete="street-address"></textarea>
+          <div class="fg" style="margin-top:1rem"><div><label for="f_date">Preferred delivery date (optional)</label><input id="f_date" name="delivery_date" type="date"></div></div>
+          <label class="t" for="f_notes">Notes (optional)</label><textarea id="f_notes" name="notes" rows="2" placeholder="Anything we should know"></textarea>
+        </fieldset>
+        <fieldset><legend><span>3</span>Payment</legend><div class="payopts" id="payopts" role="radiogroup" aria-label="Payment method"></div><div class="payinfo" id="payinfo"></div></fieldset>
+        <button class="btn" type="submit" id="placeb" style="margin-top:1.2rem">Place order</button>
+      </form>
+      <p id="ckerr" role="status" hidden style="margin-top:1rem;padding:1rem 1.2rem;border-radius:18px;border:2px solid var(--g);background:#E8F8EF"></p>
+    </div>
+    <aside class="ordsum" id="ordsum" aria-live="polite"></aside>
+  </div>
+</div></div></div>
+
+<div data-page="contact" hidden><div class="pad pg"><div class="w">
+  <div class="hd rv"><h1 style="font-size:clamp(2.6rem,9vw,4.6rem)">Contact us</h1><p>Questions, reviews, problems, or just want to talk? Send us a message here and it goes straight to our inbox.</p></div>
+  <div class="ct rv" id="cinfo"></div>
+  <div class="cg">
+    <div>
+      <form class="f" id="ctf" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact"><p style="display:none"><label>Leave this empty <input name="bot-field"></label></p>
+        <div class="fg"><div><label for="cn">Your name</label><input id="cn" name="name" required autocomplete="name"></div><div><label for="cp">Phone or WhatsApp (optional)</label><input id="cp" name="phone" type="tel" autocomplete="tel"></div></div>
+        <div class="fg"><div><label for="ce">Email (optional)</label><input id="ce" name="email" type="email" autocomplete="email"></div><div><label for="ck">What is this about?</label><select id="ck" name="topic"><option>Question</option><option>Review</option><option>Problem or complaint</option><option>Just saying hello</option></select></div></div>
+        <label for="cr">Rating, if you are leaving a review (optional)</label><select id="cr" name="rating"><option value="">No rating</option><option>5 - Excellent</option><option>4 - Good</option><option>3 - Okay</option><option>2 - Poor</option><option>1 - Very poor</option></select>
+        <label class="t" for="cm">Your message</label><textarea id="cm" name="message" rows="5" required></textarea>
+        <p style="margin-top:1.2rem"><button class="btn" type="submit">Send message</button></p>
+      </form>
+      <p id="csent" role="status" hidden></p>
+    </div>
+    <aside class="cside"><h3>You can message us about</h3><p>Questions about our services, reviews of an event or order, problems you want us to fix, or just to say hello.</p><p>Need a quote? Use the <a href="#book" style="font-weight:700">booking page</a> instead.</p></aside>
+  </div>
+</div></div></div>
+</main>
+
+<footer class="pad"><div class="w"><div class="fc">
+  <div><span class="logo big" role="img" aria-label="Roykid Events and Errand logo"></span><p style="margin-top:.6rem">Decor, cakes, catering, and errands.</p></div>
+  <div><b>Services</b><a href="#shop">Shop</a><a href="#decor">Decor &amp; celebrations</a><a href="#cakes">Cakes &amp; snacks</a><a href="#catering">Party catering</a><a href="#errands">Errands &amp; hampers</a></div>
+  <div><b>More</b><a href="#gallery">Gallery</a><a href="#book">Book a service</a><a href="#contact">Contact us</a><a href="#review">Leave a review</a></div>
+  <div><b>Find us</b><div id="fsoc"></div></div>
+</div><p class="cp">&copy; Roykid Event &amp; Errands</p></div></footer>
+
+<div class="dov" id="dov" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-label="Your cart" aria-modal="true" hidden>
+  <div class="dh"><h3>Your cart</h3><button class="dxb" id="dx" type="button" aria-label="Close cart">&#10005;</button></div>
+  <div class="dl" id="dl"></div><div class="df" id="df"></div>
+</aside>
+<button class="fq-b" id="fqb" type="button" aria-expanded="false" aria-controls="fqp"><i aria-hidden="true">?</i>FAQ</button>
+<div class="fq-p" id="fqp" role="dialog" aria-label="Help and frequently asked questions" hidden><div class="fq-h"><h3>Help &amp; FAQ</h3><button class="fq-x" id="fqx" type="button" aria-label="Close">&#10005;</button></div><div id="fqbody"></div></div>
+
+<a class="wa" id="wafloat" hidden target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+
+<script>/* Client photos (embedded so no image upload is needed). */
+var IMG_D1='images/decor-welcome-back.webp',
+IMG_D2='images/decor-barbie-birthday.webp',
+IMG_D3='images/decor-table-roses.webp',
+IMG_C1='images/cake-wedding-white.webp',
+IMG_C2='images/snack-meat-pies.webp',
+IMG_C3='images/snack-spring-rolls.webp',
+IMG_P1='images/catering-buffet-trays.webp',
+IMG_P2='images/catering-roykid-buckets.webp',
+IMG_P3='images/catering-meat-closeup.webp',
+IMG_E1='images/errands-baskets-sideways.webp',
+IMG_E2='images/errands-foodstuff-old.webp',
+IMG_E3='images/errands-hamper-bow.webp',
+IMG_H1='images/decor-purple-stage.webp',
+IMG_H2='images/cake-strawberry.webp',
+IMG_H3='images/catering-jollof-trays.webp',
+IMG_H4='images/errands-flour-bags.webp',
+IMG_N1='images/decor-50th-balloons.webp',
+IMG_N2='images/decor-birthday-cake-table.webp',
+IMG_N3='images/decor-batman-cake.webp',
+IMG_N4='images/decor-green-aisle.webp',
+IMG_N6='images/decor-gold-table.webp',
+IMG_N7='images/decor-bed-lights.webp',
+IMG_NT='images/decor-50-balloon-tall.webp',
+IMG_K1='images/cake-drip-birthday.webp',
+IMG_K2='images/cake-red-velvet-cup.webp',
+IMG_K3='images/cake-photo-cakes-ice.webp',
+IMG_K4='images/snack-doughnuts.webp',
+IMG_K5='images/cake-13th-birthday.webp',
+IMG_R1='images/errands-hamper-baskets.webp',
+IMG_R2='images/errands-foodstuff-tray.webp',
+IMG_R3='images/errands-bananas.webp',
+IMG_R4='images/errands-garri.webp',
+IMG_R5='images/errands-peppers.webp',
+IMG_Q1='images/catering-collage.webp',
+IMG_Q2='images/catering-snack-platter.webp',
+IMG_Q3='images/catering-chafing-dishes.webp',
+IMG_Q4='images/catering-buffet-line.webp';</script>
+<script>
+/* ============ EASY SETTINGS (edit these) ============ */
+var CONFIG={wa:'2348030424506',wa2:'2347053627951',phone:'',tiktok:'events_errandsinikorodu1',instagram:'roykideventserrand'}; /* phone: the number to show, e.g. '0801 234 5678'. tiktok and instagram: username only, e.g. 'roykid'. Leave any empty to hide it. */  /* WhatsApp number, international format with no plus or spaces, e.g. '2348012345678'. Leave empty to hide WhatsApp buttons. */
+/* ============================ PHOTOS ============================
+   Every photo is a real file in the  images  folder (a small copy ending in -sm.webp is made for phones).
+   To swap a photo, replace the file in images/ or change the file name next to its spot below.
+   PROBE=false means the site does NOT go hunting for files with other names (that made it slow).
+   ================================================================ */
+var PROBE=false;
+var IMGSET={"images/decor-welcome-back.webp":["images/decor-welcome-back-sm.webp",356,480,863],"images/decor-barbie-birthday.webp":["",0,560,499],"images/decor-table-roses.webp":["",0,560,498],"images/cake-wedding-white.webp":["images/cake-wedding-white-sm.webp",353,480,870],"images/snack-meat-pies.webp":["",0,560,495],"images/snack-spring-rolls.webp":["",0,560,501],"images/catering-buffet-trays.webp":["images/catering-buffet-trays-sm.webp",359,480,856],"images/catering-roykid-buckets.webp":["",0,560,487],"images/catering-meat-closeup.webp":["",0,560,494],"images/errands-baskets-sideways.webp":["images/errands-baskets-sideways-sm.webp",353,480,871],"images/errands-foodstuff-old.webp":["",0,560,497],"images/errands-hamper-bow.webp":["",0,560,504],"images/decor-purple-stage.webp":["",0,480,640],"images/cake-strawberry.webp":["",0,480,640],"images/catering-jollof-trays.webp":["",0,420,560],"images/errands-flour-bags.webp":["",0,480,640],"images/decor-50th-balloons.webp":["",0,640,357],"images/decor-birthday-cake-table.webp":["",0,480,640],"images/decor-batman-cake.webp":["",0,560,412],"images/decor-green-aisle.webp":["",0,480,640],"images/decor-gold-table.webp":["images/decor-gold-table-sm.webp",429,480,716],"images/decor-bed-lights.webp":["",0,480,640],"images/decor-50-balloon-tall.webp":["",0,345,602],"images/cake-drip-birthday.webp":["images/cake-drip-birthday-sm.webp",480,720,960],"images/cake-red-velvet-cup.webp":["images/cake-red-velvet-cup-sm.webp",480,720,960],"images/cake-photo-cakes-ice.webp":["images/cake-photo-cakes-ice-sm.webp",640,960,720],"images/snack-doughnuts.webp":["images/snack-doughnuts-sm.webp",610,689,723],"images/cake-13th-birthday.webp":["images/cake-13th-birthday-sm.webp",427,640,960],"images/errands-hamper-baskets.webp":["images/errands-hamper-baskets-sm.webp",640,960,540],"images/errands-foodstuff-tray.webp":["images/errands-foodstuff-tray-sm.webp",360,540,960],"images/errands-bananas.webp":["images/errands-bananas-sm.webp",640,960,910],"images/errands-garri.webp":["images/errands-garri-sm.webp",360,540,960],"images/errands-peppers.webp":["images/errands-peppers-sm.webp",640,960,407],"images/catering-collage.webp":["images/catering-collage-sm.webp",640,960,841],"images/catering-snack-platter.webp":["images/catering-snack-platter-sm.webp",640,750,637],"images/catering-chafing-dishes.webp":["images/catering-chafing-dishes-sm.webp",413,540,837],"images/catering-buffet-line.webp":["images/catering-buffet-line-sm.webp",428,540,808],"images/shop-ewa-aganyin-sauce.webp":["images/shop-ewa-aganyin-sauce-sm.webp",381,571,960],"images/shop-meat.webp":["images/shop-meat-sm.webp",360,540,960],"images/shop-palm-oil-5l.webp":["",0,487,534],"images/shop-bleached-palm-oil.webp":["images/shop-bleached-palm-oil-sm.webp",360,540,960],"images/shop-honey-beans.webp":["images/shop-honey-beans-sm.webp",429,540,806],"images/shop-garri-bag.webp":["images/shop-garri-bag-sm.webp",429,540,805],"images/shop-balloon-backdrop.webp":["images/shop-balloon-backdrop-sm.webp",446,540,775],"images/shop-party-popper.webp":["images/shop-party-popper-sm.webp",360,540,960],"images/shop-modelling-balloons.webp":["images/shop-modelling-balloons-sm.webp",635,953,960],"images/shop-surprise-decoration.webp":["images/shop-surprise-decoration-sm.webp",480,720,960],"images/shop-parfait-1kg.webp":["images/shop-parfait-1kg-sm.webp",360,540,960],"images/shop-sugar-doughnut.webp":["images/shop-sugar-doughnut-sm.webp",640,960,720],"images/shop-jam-doughnut.webp":["images/shop-jam-doughnut-sm.webp",480,720,960],"images/shop-fruit-cake.webp":["images/shop-fruit-cake-sm.webp",480,720,960],"images/shop-money-cake.webp":["images/shop-money-cake-sm.webp",422,633,960]};
+var EXTS=['jpg','jpeg','png','webp','JPG','JPEG','PNG'],cdnOK=false,FBL=[],SERIESC={},SIZES='(max-width:700px) 60vw, 420px',WCOL=['#FFE9A3','#FFD3DE','#CFF1DE','#CDE9FB','#E5D9FF'];
+function slot(name,built,o){return {p:'images/'+name,f:built||'',o:o}}
+var PHOTOS={
+  /* HOME PAGE, the 4 arches at the top: hero-1 decor, hero-2 cakes, hero-3 party food, hero-4 errands */
+  hero:[slot('hero-1',IMG_H1),slot('hero-2',IMG_H2),slot('hero-3',IMG_H3),slot('hero-4',IMG_H4)],
+  /* HOME PAGE, the 3 photos on each service row: decor-home-1..3, cakes-home-1..3, catering-home-1..3, errands-home-1..3 */
+  home:{
+    decor:[slot('decor-home-1',IMG_D1),slot('decor-home-2',IMG_D2),slot('decor-home-3',IMG_D3)],
+    cakes:[slot('cakes-home-1',IMG_C1),slot('cakes-home-2',IMG_C2),slot('cakes-home-3',IMG_C3)],
+    catering:[slot('catering-home-1',IMG_P1),slot('catering-home-2',IMG_P2),slot('catering-home-3',IMG_P3)],
+    errands:[slot('errands-home-1',IMG_E1),slot('errands-home-2',IMG_E2),slot('errands-home-3',IMG_E3)]},
+  /* SERVICE PAGES, the 3 photos in the grid at the top (1 is the tall one): decor-top-1..3, cakes-top-1..3, ... */
+  top:{
+    decor:[slot('decor-top-1',IMG_NT),slot('decor-top-2',IMG_D2),slot('decor-top-3',IMG_D3)],
+    cakes:[slot('cakes-top-1',IMG_C1),slot('cakes-top-2',IMG_C2),slot('cakes-top-3',IMG_K1,'50% 12%')],
+    catering:[slot('catering-top-1',IMG_P1),slot('catering-top-2',IMG_P2),slot('catering-top-3',IMG_P3)],
+    errands:[slot('errands-top-1',IMG_E1),slot('errands-top-2',IMG_E2),slot('errands-top-3',IMG_E3)]},
+  /* SERVICE PAGES, "Recent work" strip: used only until you add your own files named decor-1, decor-2, decor-3 ...
+     (cakes-1.., catering-1.., errands-1..). The strip and the Gallery grow by themselves with every file you add. */
+  recent:{decor:[{p:'',f:IMG_N1},{p:'',f:IMG_N2},{p:'',f:IMG_N3,o:'26% 50%'},{p:'',f:IMG_N4},{p:'',f:IMG_H1}],cakes:[{p:'',f:IMG_K1,o:'50% 12%'},{p:'',f:IMG_K2},{p:'',f:IMG_K3,o:'92% 50%'},{p:'',f:IMG_K4},{p:'',f:IMG_K5}],catering:[{p:'',f:IMG_Q1,o:'100% 50%'},{p:'',f:IMG_Q2,o:'55% 50%'},{p:'',f:IMG_Q3},{p:'',f:IMG_Q4},IMG_P2],errands:[{p:'',f:IMG_R1,o:'15% 50%'},{p:'',f:IMG_R2},{p:'',f:IMG_R3},{p:'',f:IMG_R4},{p:'',f:IMG_R5,o:'20% 50%'}]},
+  /* HOME PAGE "Our work" slideshow (also the start of the Gallery): 8 photos, 2 from each service, work-1 .. work-8 */
+  work:[slot('work-1',IMG_D2),slot('work-2',IMG_K5),slot('work-3',IMG_P2),slot('work-4',IMG_R2),slot('work-5',IMG_H1),slot('work-6',IMG_K3,'92% 50%'),slot('work-7',IMG_Q2,'55% 50%'),slot('work-8',IMG_R1,'15% 50%')]
+};
+/* Where a photo is cropped (for example into a tall frame), choose the part to keep: 'images/name':'30% 50%' (left-right, top-bottom) */
+var FOCUS={'images/decor-3':'26% 50%'};
+/* ====================================================== */
+/* ============================ SHOP SETTINGS ============================
+   sample: true shows a "sample products" banner. Set it to false when the real prices are in.
+   deliveryFee: a flat delivery fee in naira added to every order. 0 = no fee line.
+   deliveryNote: a short line shown under the totals, for example 'Delivery is confirmed after you order.'
+   catalogUrl: optional. A Google Sheet "published as CSV" link. When set, the shop reads its products and prices
+               from that sheet, so the owner can change prices any time without touching this file. See the guide.
+   featured: the product ids shown in the home page "Our shop" slideshow (in a Google Sheet, put yes in a column called featured).
+   =========================================================================== */
+var SHOP={sample:true,deliveryFee:0,deliveryNote:'',catalogUrl:'',featured:['family-hamper','gift-hamper','ewa-aganyin-sauce','small-chops','meat-pies','milky-chocolate-doughnut']};
+/* ============================ PAYSTACK (not connected yet) ============================
+   When the Paystack account is ready, paste the PUBLIC key (starts pk_test_ or pk_live_) between the quotes.
+   While it is empty, the checkout button says "Place order" and the order is sent to the owner to arrange payment. */
+var PAYSTACK={publicKey:''};
+/* ============================ PAY TO OUR ACCOUNT (direct transfer) ============================
+   Fill these in to let customers pay straight into the business bank account.
+   While accountNumber is empty, this option shows as "not available yet".
+   note: optional extra line, for example 'Please send proof of payment on WhatsApp.' */
+var DIRECT={bank:'Moniepoint',accountNumber:'5069780228',accountName:'ROYKID EVENT N ERRAND',note:''};
+/* ============================ PRODUCTS ============================
+   One line per product: id (unique, no spaces), name, cat (category), price (naira, numbers only), unit, desc,
+   img (a photo path like 'images/shop-garri.jpg', or leave empty), stock (false = out of stock).
+   Foodstuff products and prices are real, and so are the first 4 Decor ones (backdrop, party popper, modelling balloons, surprise decoration) and the first 5 Snacks ones (small chops platter, doughnuts, parfait) and all the Cakes ones. The Hampers, the small chops box, the meat pies and the other Decor ones are still SAMPLES: replace them with the real ones.
+   svc:'errands' (or decor, cakes, catering) puts a product in the shop strip on that service page (up to 6). */
+var PRODUCTS=[
+  {id:'ewa-aganyin-sauce',name:'Ewa Aganyin sauce',cat:'Foodstuff',price:5000,desc:'Our own Ewa Aganyin sauce, packed in a jar.',img:{p:'',f:'images/shop-ewa-aganyin-sauce.webp',o:'50% 35%'},svc:'errands'},
+  {id:'meat',name:'Meat',cat:'Foodstuff',price:7000,unit:'1 kg',desc:'Meat, weighed and packed for you.',img:{p:'',f:'images/shop-meat.webp',o:'50% 60%'},svc:'errands'},
+  {id:'palm-oil-5l',name:'Palm oil',cat:'Foodstuff',price:10000,unit:'5 litres',desc:'Red palm oil in a 5 litre bottle.',img:{p:'',f:'images/shop-palm-oil-5l.webp',o:'50% 50%'},svc:'errands'},
+  {id:'bleached-palm-oil-1l',name:'Bleached palm oil',cat:'Foodstuff',price:5000,unit:'1 litre',desc:'Bleached palm oil in a 1 litre bottle.',img:{p:'',f:'images/shop-bleached-palm-oil.webp',o:'50% 70%'},svc:'errands'},
+  {id:'garri-ijebu-1-5kg',name:'Grade A garri ijebu',cat:'Foodstuff',price:7500,unit:'1.5 kg pack',desc:'Crispy garri ijebu, packaged for you.',img:{p:'',f:'images/errands-garri.webp',o:'50% 35%'},svc:'errands'},
+  {id:'honey-beans',name:'Clean honey beans',cat:'Foodstuff',price:3000,desc:'Clean honey beans (ewa oloyin), packed.',img:{p:'',f:'images/shop-honey-beans.webp',o:'50% 35%'},svc:'errands'},
+  {id:'garri-ijebu-bag',name:'Garri ijebu',cat:'Foodstuff',price:25000,unit:'bag',desc:'Garri ijebu by the full bag.',img:{p:'',f:'images/shop-garri-bag.webp',o:'50% 40%'}},
+  {id:'family-hamper',name:'Family food hamper',cat:'Hampers',price:25000,unit:'basket',desc:'A full basket of everyday food items.',img:IMG_E1},
+  {id:'gift-hamper',name:'Gift hamper',cat:'Hampers',price:15000,unit:'hamper',desc:'A wrapped hamper with a bow, ready to give.',img:IMG_E3},
+  {id:'mini-hamper',name:'Mini hamper',cat:'Hampers',price:8000,unit:'hamper',desc:'A small hamper for a thoughtful gift.',img:'images/shop-mini-hamper.jpg'},
+  {id:'small-chops-platter',name:'Small chops platter',cat:'Snacks',price:45000,desc:'A mixed platter of small chops for your party.',img:{p:'',f:'images/catering-snack-platter.webp',o:'50% 50%'},svc:'cakes'},
+  {id:'milky-chocolate-doughnut',name:'Milky / chocolate doughnut',cat:'Snacks',price:10000,unit:'pack',desc:'Soft doughnuts filled with milky or chocolate cream.',img:{p:'',f:'images/snack-doughnuts.webp',o:'50% 50%'},svc:'cakes'},
+  {id:'parfait-1kg',name:'Parfait',cat:'Snacks',price:13000,unit:'1 kg',desc:'Layered parfait in a 1 kg tub.',img:{p:'',f:'images/shop-parfait-1kg.webp',o:'50% 75%'},svc:'cakes'},
+  {id:'sugar-doughnut',name:'Sugar doughnut',cat:'Snacks',price:5000,unit:'pack',desc:'Soft sugar doughnuts.',img:{p:'',f:'images/shop-sugar-doughnut.webp',o:'50% 50%'}},
+  {id:'jam-doughnut',name:'Jam doughnut',cat:'Snacks',price:7000,unit:'pack',desc:'Soft doughnuts filled with jam.',img:{p:'',f:'images/shop-jam-doughnut.webp',o:'50% 45%'}},
+  {id:'small-chops',name:'Small chops box',cat:'Snacks',price:6000,unit:'box',desc:'Spring rolls and more, freshly made.',img:IMG_C3},
+  {id:'meat-pies',name:'Meat pies',cat:'Snacks',price:12000,unit:'box of 6',desc:'Golden, flaky meat pies.',img:IMG_C2},
+  {id:'fruit-cake',name:'Whipped cream fruit decorated cake',cat:'Cakes',price:65000,desc:'Whipped cream cake decorated with fruit.',img:{p:'',f:'images/shop-fruit-cake.webp',o:'50% 80%'},svc:'cakes'},
+  {id:'birthday-cake',name:'Birthday cake',cat:'Cakes',price:50000,desc:'A birthday cake with a custom topper.',img:{p:'',f:'images/cake-13th-birthday.webp',o:'50% 40%'},svc:'cakes'},
+  {id:'cake-8-inch',name:'8 inch cake',cat:'Cakes',price:25000,desc:'An 8 inch cake with chocolate drip.',img:{p:'',f:'images/cake-drip-birthday.webp',o:'50% 15%'}},
+  {id:'money-cake',name:'Money cake',cat:'Cakes',price:150000,desc:'A money cake for birthdays and special gifts.',img:{p:'',f:'images/shop-money-cake.webp',o:'50% 80%'}},
+  {id:'cake-parfait',name:'Cake parfait',cat:'Cakes',price:4000,desc:'Layers of cake and cream in a cup.',img:{p:'',f:'images/cake-red-velvet-cup.webp',o:'50% 55%'},svc:'cakes'},
+  {id:'balloon-backdrop',name:'Balloon backdrop',cat:'Decor',price:50000,desc:'Balloon backdrop for birthdays and celebrations.',img:{p:'',f:'images/shop-balloon-backdrop.webp',o:'50% 40%'},svc:'decor'},
+  {id:'party-popper',name:'Party popper',cat:'Decor',price:1000,desc:'Gold party popper for the big moment.',img:{p:'',f:'images/shop-party-popper.webp',o:'50% 45%'},svc:'decor'},
+  {id:'modelling-balloons',name:'Modelling balloons',cat:'Decor',price:3500,unit:'pack',desc:'Colourful modelling balloons for twisting and shaping.',img:{p:'',f:'images/shop-modelling-balloons.webp',o:'50% 50%'},svc:'decor'},
+  {id:'surprise-decoration',name:'Surprise decoration',cat:'Decor',price:70000,desc:'Surprise room decoration with balloons and a birthday message.',img:{p:'',f:'images/shop-surprise-decoration.webp',o:'50% 60%'},svc:'decor'},
+  {id:'balloon-bundle',name:'Balloon bundle',cat:'Decor',price:15000,unit:'25 balloons',desc:'Mixed colour balloons, ready to inflate.',img:IMG_D1},
+  {id:'backdrop-set',name:'Birthday backdrop set',cat:'Decor',price:35000,unit:'set',desc:'A printed backdrop with a balloon frame.',img:IMG_D2},
+  {id:'table-centerpiece',name:'Table centerpiece',cat:'Decor',price:8000,unit:'piece',desc:'Flowers in a glass vase for your table.',img:IMG_D3,svc:'decor'},
+  {id:'foil-letters',name:'Foil letter balloons',cat:'Decor',price:3000,unit:'word',desc:'Silver foil letters to spell your message.',img:'images/shop-foil-letters.jpg'}
+];
+/* shop state (set up early so the first page load can use it) */
+var cart={},ckDone=false;
+try{cart=JSON.parse(localStorage.getItem('rk_cart')||'{}')||{}}catch(e){cart={}}
+var CATS={Foodstuff:['\ud83c\udf3e','#FFE9A3'],Hampers:['\ud83e\uddfa','#CDE9FB'],Snacks:['\ud83c\udf69','#FFD3DE'],Decor:['\ud83c\udf88','#FFE9A3']};
+var shopCat='All',shopQ='',shopQraw='',shopBuilt=false;
+/* ============================ REVIEWS SHOWN ON THE HOME PAGE ============================
+   Customers send reviews by email (the form at the bottom of the home page). Only show the ones you approve.
+   list: type approved reviews here (up to 10 show, newest first), one per line, like this:
+     {name:'Chioma',rating:5,text:'The cake was perfect!',service:'Cakes and snacks',date:'2026-10-02'},
+   csvUrl: optional. A Google Sheet "published as CSV" with columns  name, rating, message, service, date, show.
+           Type yes in the "show" column for the reviews you want on the site, so you never edit this file.
+   While there are no reviews, the section stays hidden. */
+var REVIEWS={list:[],csvUrl:''};
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var SV={
+ decor:{t:'Decor & celebrations',s:'Decor',e:'🎈',c:'#FFE9A3',tag:'Make the room match the moment.',p:'From a birthday backdrop to full wedding styling, we design and set up your venue so you can enjoy the day instead of arranging it.',good:['Birthdays','Weddings','Surprise parties','Other celebrations'],items:[{n:'Event decoration',e:'🎈',d:'Backdrops, balloons, and table settings styled to your theme and colours.'},{n:'Wedding decor',e:'💐',d:'Full venue styling for your big day, planned around your colours and style.'},{n:'Surprise party setup',e:'🎁',d:'We plan and set up the surprise while you keep the secret.'}],f:[['How early should I book?','As early as you can. Send your date and details and we will confirm if we are available.'],['Can you work to my theme and budget?','Share your theme, colours, and budget in the booking form and we will send a quote that fits.']]},
+ cakes:{t:'Cakes & snacks',s:'Cakes',e:'🎂',c:'#FFD3DE',tag:'Sweet, fresh, and made for sharing.',p:'Custom cakes and freshly made snacks for your celebration. Tell us the occasion and the number of guests and we will take it from there.',good:['Birthdays','Weddings','Parties and get-togethers'],items:[{n:'Cake making',e:'🎂',d:'Custom cakes for birthdays, weddings, and every celebration.'},{n:'Doughnuts',e:'🍩',d:'Freshly made doughnuts for your guests.'},{n:'Small chops',e:'🥟',d:'A mix of small chops for your party.'}],f:[['How do I order a cake?','Choose Cake making in the booking form, add your date, and tell us the flavour, size, and design you want.'],['Can I order snacks without a cake?','Yes. Pick doughnuts or small chops on their own, or combine them with any other service.']]},
+ catering:{t:'Party catering',s:'Catering',e:'🍲',c:'#CFF1DE',tag:'Cooked food for the whole party.',p:'We cook food for weddings, birthdays, and other parties, so your guests are fed and you are not stuck in the kitchen. Tell us your guest count and what you would like.',good:['Weddings','Birthdays','Other parties'],items:[{n:'Wedding food',e:'💍',d:'Cooked food for your wedding guests.',v:'Party food'},{n:'Birthday and party food',e:'🍽️',d:'Cooked food for birthdays and other parties.',v:'Party food'}],f:[['What do you need from me?','Your date, venue, number of guests, and the dishes you would like. Put these in the booking form.'],['Can I add decor or a cake?','Yes. Tick as many services as you need in the same booking.']]},
+ errands:{t:'Errands & hampers',s:'Errands',e:'🛍️',c:'#CDE9FB',tag:'You send the list. We do the running around.',p:'No time to shop? Tell us what you need and we will buy it and deliver it to you, whether it is foodstuffs for your home or a hamper.',good:['Busy days','Gifts','Stocking up'],items:[{n:'Foodstuff shopping and delivery',e:'🛒',d:'We buy your foodstuffs and deliver them to your door.',v:'Foodstuff shopping and delivery'},{n:'Food hampers',e:'🧺',d:'We put together a hamper and deliver it, as a gift or for yourself.',v:'Food hamper'}],f:[['How do I send my shopping list?','Type it in the More details box of the booking form, along with your delivery area.'],['Can you deliver a hamper as a gift?','Yes. Tell us who it is for and where to deliver in the booking form.']]}
+};
+var SERV=[['Event decoration','🎈'],['Wedding decor','💐'],['Surprise party setup','🎁'],['Cake making','🎂'],['Doughnuts','🍩'],['Small chops','🥟'],['Party food','🍲'],['Foodstuff shopping and delivery','🛒'],['Food hamper','🧺']];
+var HERO=[['🎈','#FFE9A3','Event decor by Roykid'],['🎂','#FFD3DE','Cake by Roykid'],['🍲','#CFF1DE','Party food by Roykid'],['🛍️','#CDE9FB','Foodstuff and errands by Roykid']];
+var WORK=[['Event decor','🎈','#FFE9A3'],['Cakes','🎂','#FFD3DE'],['Party catering','🍲','#CFF1DE'],['Errands and hampers','🛍️','#CDE9FB'],['Event decor','🎈','#FFE9A3'],['Cakes','🎂','#FFD3DE'],['Party catering','🍲','#CFF1DE'],['Errands and hampers','🛍️','#CDE9FB']];
+var STEPS='<div><b>1</b><h3>Choose</h3><p>Pick the services you need.</p></div><div><b>2</b><h3>Book</h3><p>Send your date and details.</p></div><div><b>3</b><h3>Get a quote</h3><p>We reply with a clear price.</p></div><div><b>4</b><h3>Enjoy</h3><p>We get to work. You relax.</p></div>';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+function waUrl(m){return CONFIG.wa?'https://wa.me/'+CONFIG.wa+'?text='+encodeURIComponent(m||'Hello Roykid Event & Errands, I would like to book.'):''}
+function waBtn(cls){var u=waUrl();return u?'<a class="btn '+cls+'" href="'+u+'" target="_blank" rel="noopener">Chat on WhatsApp</a>':''}
+function cdnU(p,w){return '/.netlify/images?url=/'+encodeURI(p)+'&w='+w+'&q=75'}
+function srcset(p){return cdnU(p,480)+' 480w, '+cdnU(p,900)+' 900w, '+cdnU(p,1400)+' 1400w'}
+function fbKey(v){if(!v)return '';var k=FBL.indexOf(v);if(k<0)k=FBL.push(v)-1;return String(k)}
+function imgOk(i){if(i.currentSrc&&i.currentSrc.indexOf('/.netlify/images')>-1)cdnOK=true}
+function imgErr(i){
+  var b=i.dataset.b;
+  if(b===undefined){i.remove();return}
+  if(i.hasAttribute('srcset')&&!cdnOK&&!i.dataset.pl){i.dataset.pl='1';i.removeAttribute('srcset');i.src=i.dataset.cur;return}
+  var x=+i.dataset.x+1;
+  if(x>=EXTS.length){
+    var f=i.dataset.f!==''?FBL[+i.dataset.f]:'';
+    if(f){i.removeAttribute('srcset');i.removeAttribute('data-b');i.src=f}else{var g=i.closest('[data-gone]');(g||i).remove()}
+    return;
+  }
+  var p=b+'.'+EXTS[x];i.dataset.x=x;i.dataset.pl='';i.dataset.cur=p;i.srcset=srcset(p);i.src=p;
+}
+function imgTag(u,fb,alt,foc0){
+  var a=' alt="'+esc(alt||'')+'" loading="lazy" decoding="async"';
+  var sk=IMGSET[fb||'']?fb:(IMGSET[u||'']?u:'');
+  if(!PROBE&&sk){var d=IMGSET[sk];return '<img src="'+esc(sk)+'"'+(d[0]?' srcset="'+esc(d[0])+' '+d[1]+'w, '+esc(sk)+' '+d[2]+'w" sizes="'+SIZES+'"':'')+' width="'+d[2]+'" height="'+d[3]+'"'+a+(foc0?' style="object-position:'+esc(foc0)+'"':'')+' onerror="imgErr(this)">'}
+  if(!PROBE&&!fb&&u&&String(u).indexOf('images/')===0)return '';
+  if(!u&&fb)return '<img src="'+esc(fb)+'"'+a+(foc0?' style="object-position:'+esc(foc0)+'"':'')+'>';
+  if(String(u).indexOf('images/')!==0)return '<img src="'+esc(u)+'"'+a+' onerror="imgErr(this)">';
+  var m=/^(.*)\.([A-Za-z]+)$/.exec(u),b=u,x=0;
+  if(m&&EXTS.indexOf(m[2])>-1){b=m[1];x=EXTS.indexOf(m[2])}
+  var p=b+'.'+EXTS[x],fc=foc0||FOCUS[b],foc=fc?' style="object-position:'+esc(fc)+'"':'';
+  if(fb)return '<img src="'+esc(fb)+'" data-probe="'+esc(b)+'" data-f="'+fbKey(fb)+'"'+a+foc+'>';
+  return '<img src="'+esc(p)+'" srcset="'+esc(srcset(p))+'" sizes="'+SIZES+'" data-b="'+esc(b)+'" data-x="'+x+'" data-cur="'+esc(p)+'" data-f="'+fbKey(fb)+'"'+a+foc+' onload="imgOk(this)" onerror="imgErr(this)">';
+}
+function frame(list,i,em,bg,alt,cls,cap){
+  var e=(list||[])[i],o=(e&&typeof e==='object'),u=o?e.p:e,fb=o?e.f:'';
+  return '<div class="fr '+(cls||'')+'" style="--c:'+bg+'"><span class="fe" aria-hidden="true">'+em+'</span>'+((u||fb)?imgTag(u,fb,alt,o?e.o:''):'')+(cap?'<span class="cap">'+esc(cap)+'</span>':'')+'</div>';
+}
+/* find photos named prefix-1, prefix-2, ... (stops at the first missing number) */
+var PROBEC={};
+function useFile(i,p){
+  var m=/^(.*)\.([A-Za-z]+)$/.exec(p);if(!m)return;
+  i.dataset.b=m[1];i.dataset.x=EXTS.indexOf(m[2]);i.dataset.cur=p;i.dataset.pl='';
+  i.setAttribute('sizes',SIZES);i.onload=function(){imgOk(this)};i.onerror=function(){imgErr(this)};i.srcset=srcset(p);i.src=p;
+}
+var PIO=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var im=e.target;PIO.unobserve(im);probeOne(im.dataset.probe,function(p){if(p)useFile(im,p)})}})},{rootMargin:'200px'}):null;
+function watchProbe(root){[].forEach.call((root||document).querySelectorAll('img[data-probe]:not([data-pw])'),function(i){i.dataset.pw='1';if(PIO)PIO.observe(i);else probeOne(i.dataset.probe,function(p){if(p)useFile(i,p)})})}
+function probeOne(base,cb){
+  if(!PROBE){cb(null);return}
+  if(PROBEC[base]!==undefined){cb(PROBEC[base]);return}
+  var i=0,done=cb;cb=function(v){PROBEC[base]=v;done(v)};
+  (function t(){
+    if(i>=EXTS.length){cb(null);return}
+    var p=base+'.'+EXTS[i++],im=new Image(),plain=false;
+    im.onload=function(){if(!plain)cdnOK=true;cb(p)};
+    im.onerror=function(){if(!plain&&!cdnOK){plain=true;im.src=p;return}t()};
+    im.src=cdnU(p,32);
+  })();
+}
+function probeSeries(prefix,max,cb){
+  if(!PROBE){cb([]);return}
+  if(SERIESC[prefix]){cb(SERIESC[prefix]);return}
+  var out=[],k=1;
+  (function next(){
+    if(k>max){SERIESC[prefix]=out;cb(out);return}
+    probeOne('images/'+prefix+k,function(p){if(!p){SERIESC[prefix]=out;cb(out);return}out.push(p);k++;next()});
+  })();
+}
+function workHTML(){var o='';for(var i=0;i<WORK.length;i++){var w=WORK[i];o+=frame(PHOTOS.work,i,w[1],w[2],w[0]+' by Roykid','',w[0])}return o}
+var GCAP={'Event decor':['\ud83c\udf88','#FFE9A3'],'Cakes':['\ud83c\udf82','#FFD3DE'],'Small chops':['\ud83e\udd5f','#CFF1DE'],'Wedding setups':['\ud83d\udc90','#E5D9FF'],'Party food':['\ud83c\udf72','#CFF1DE'],'Party catering':['\ud83c\udf72','#CFF1DE'],'Hampers':['\ud83e\uddfa','#CDE9FB'],'Errands and hampers':['\ud83d\udecd\ufe0f','#CDE9FB'],'Our work':['\ud83c\udf89','#E5D9FF']};
+function galFig(e){
+  var cap=e.cap||'Our work',w=GCAP[cap]||GCAP['Our work'];
+  return '<figure class="gi" data-gone="1" style="--c:'+w[1]+'"><span class="fe" aria-hidden="true">'+w[0]+'</span>'+imgTag(e.p||'',e.f||'',cap+' by Roykid',e.o)+'<figcaption class="cap">'+esc(cap)+'</figcaption></figure>';
+}
+var GBUILT={'decor-':[{f:IMG_N1},{f:IMG_N2},{f:IMG_N3},{f:IMG_N4},{f:IMG_H1}],'gallery-decor-':[{f:IMG_N6},{f:IMG_N7}],'catering-':[{f:IMG_Q1},{f:IMG_Q2},{f:IMG_Q3},{f:IMG_Q4}],'errands-':[{f:IMG_R1,o:'25% 50%'},{f:IMG_R2},{f:IMG_R3},{f:IMG_R4},{f:IMG_R5,o:'30% 50%'}],'cakes-':[{f:IMG_K1},{f:IMG_K2},{f:IMG_K3},{f:IMG_K4},{f:IMG_K5}]};
+var galState=0;
+function renderGallery(){
+  if(galState)return;galState=1;
+  var el=gid('gall'),base=[];
+  PHOTOS.work.forEach(function(s,i){base.push({p:s.p,f:s.f,o:s.o,cap:WORK[i][0]})});
+  [[IMG_C1,'Cakes'],[IMG_C3,'Small chops'],[IMG_E1,'Hampers'],[IMG_D1,'Event decor'],[IMG_D3,'Event decor']].forEach(function(d){base.push({p:'',f:d[0],cap:d[1]})});
+  el.innerHTML=base.map(galFig).join('');watchProbe(el);
+  var S=[['decor-','Event decor',12],['cakes-','Cakes',12],['catering-','Party catering',12],['errands-','Errands and hampers',12],
+         ['gallery-decor-','Event decor',60],['gallery-cakes-','Cakes',60],['gallery-catering-','Party catering',60],['gallery-errands-','Errands and hampers',60],['gallery-','Our work',60]],left=S.length,res=[];
+  S.forEach(function(s,k){probeSeries(s[0],s[2],function(found){res[k]=found.length?found.map(function(p){return {p:p,f:'',cap:s[1]}}):(GBUILT[s[0]]||[]).map(function(b){return {p:'',f:b.f,o:b.o,cap:s[1]}});if(--left===0){var seen={};base.forEach(function(b){if(b.f)seen[b.f]=1});el.insertAdjacentHTML('beforeend',[].concat.apply([],res).filter(function(e){if(!e.f)return true;if(seen[e.f])return false;seen[e.f]=1;return true}).map(galFig).join(''));watchProbe(el)}})});
+}
+function bookHref(v){return '#book?s='+encodeURIComponent(v)}
+function mosaic3(list,s){return '<div class="m3">'+[0,1,2].map(function(i){return frame(list,i,s.e,s.c,s.t+' by Roykid')}).join('')+'</div>'}
+function renderHome(){
+  document.getElementById('harch').innerHTML=HERO.map(function(h,i){return frame(PHOTOS.hero,i,h[0],h[1],h[2]||'Roykid event','')}).join('');
+  var ids=Object.keys(SV);
+  document.getElementById('zz').innerHTML=ids.map(function(id,n){var s=SV[id];return '<div class="zr rv"><div class="zp">'+mosaic3(PHOTOS.home[id],s)+'</div><div class="zt"><span class="lab" style="--c:'+s.c+'">0'+(n+1)+'</span><h2>'+esc(s.t)+'</h2><p>'+s.p+'</p><div class="gd">'+s.items.map(function(x){return '<span>'+esc(x.n)+'</span>'}).join('')+'</div><a class="btn" href="#'+id+'">Explore '+esc(s.s)+'</a></div></div>'}).join('');
+  document.getElementById('hs').innerHTML=STEPS;
+  document.getElementById('hstrip').innerHTML=workHTML();
+  document.getElementById('cwa').innerHTML=waBtn('o');
+  document.getElementById('qs').innerHTML=Object.keys(SV).map(function(id){var s=SV[id];return '<optgroup label="'+esc(s.t)+'">'+s.items.map(function(x){var v=x.v||x.n;return '<option value="'+esc(v)+'">'+esc(x.n)+'</option>'}).join('')+'</optgroup>'}).join('');
+  document.getElementById('sg').innerHTML=SERV.map(function(x){return '<label class="sc"><input type="checkbox" name="services" value="'+esc(x[0])+'"><span class="e" aria-hidden="true">'+x[1]+'</span><b>'+esc(x[0])+'</b></label>'}).join('');
+  var wf=document.getElementById('wafloat'),u=waUrl();if(u){wf.href=u;wf.hidden=false}
+  document.getElementById('swa').innerHTML=waBtn('o');renderContact();renderShopStrip();
+}
+function renderService0(id){
+  var s=SV[id],TOP=PHOTOS.top[id];
+  document.getElementById('svc').innerHTML='<section class="sh pad"><div class="w sgrid"><div><span class="lab" style="--c:'+s.c+'">Services</span><h1>'+esc(s.t)+'</h1><p class="tag">'+s.tag+'</p><p class="sp">'+s.p+'</p><div class="gd">'+s.good.map(function(g){return '<span>'+g+'</span>'}).join('')+'</div><div class="row"><a class="btn" href="'+bookHref(s.items[0].v||s.items[0].n)+'">Book '+esc(s.s)+'</a>'+waBtn('o')+'</div></div>'
+  +'<div class="mos">'+frame(TOP,0,s.e,s.c,s.t,'')+frame(TOP,1,s.items[0].e,'#fff0c2',s.t,'')+frame(TOP,2,s.items[s.items.length-1].e,'#e9f7ee',s.t,'')+'</div></div></section>'
+  +'<section class="pad"><div class="w"><div class="hd rv"><h2>What we offer</h2></div><div class="lst rv">'+s.items.map(function(x){return '<div><span class="em" style="--c:'+s.c+'">'+x.e+'</span><div><h3>'+esc(x.n)+'</h3><p>'+x.d+'</p></div><a class="btn sm" href="'+bookHref(x.v||x.n)+'">Book this</a></div>'}).join('')+'</div></div></section>'
+  +'<section class="pad"><div class="w"><div class="hd rv"><h2>Recent work</h2></div><div class="strip rv" id="wstrip"></div><p class="smp">Photos of our work will appear here.</p></div></section>'
+  +'<section class="pad"><div class="w" style="max-width:48rem"><div class="hd rv"><h2>Good to know</h2></div><div class="rv">'+s.f.map(function(q){return '<details><summary>'+q[0]+'</summary><p>'+q[1]+'</p></details>'}).join('')+'</div></div></section>'
+  +'<section class="pad"><div class="w"><div class="cta rv"><h2>Ready to book '+esc(s.s)+'?</h2><div class="row c"><a class="btn" href="'+bookHref(s.items[0].v||s.items[0].n)+'">Book now</a>'+waBtn('o')+'</div></div></div></section>';
+}
+var pages=[].slice.call(document.querySelectorAll('[data-page]')),mp=document.getElementById('mp'),mb=document.getElementById('mb'),last='';
+var io=('IntersectionObserver' in window&&!reduce)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1}):null;
+function watch(){[].forEach.call(document.querySelectorAll('.rv:not(.in)'),function(el){io?io.observe(el):el.classList.add('in')})}
+function cur(){return window.__h||location.hash||'#home'}
+function sumUpdate(){
+  var v=[].map.call(document.querySelectorAll('input[name="services"]:checked'),function(c){return c.value}),d=document.getElementById('dt').value;
+  document.getElementById('sl').innerHTML=v.length?v.map(function(x){return '<li>'+esc(x)+'</li>'}).join(''):'<li class="none">No services chosen yet</li>';
+  document.getElementById('sd').textContent=d?'Date: '+d:'';
+}
+function route(force){
+  var key=cur();if(!force&&key===last)return;last=key;
+  var h=key.slice(1).split('?'),id=h[0]||'home',q=new URLSearchParams(h[1]||''),pg=id;
+  var jump=(id==='services'||id==='review')?id:null;
+  if(jump){id=pg='home'}else if(SV[id]){renderService(id);pg='service'}else if(['home','gallery','book','contact','shop','checkout'].indexOf(id)<0){id=pg='home'}
+  pages.forEach(function(p){p.hidden=p.dataset.page!==pg});
+  [].forEach.call(document.querySelectorAll('.lk'),function(a){if(a.getAttribute('href')==='#'+id){a.setAttribute('aria-current','page')}else{a.removeAttribute('aria-current')}});
+  if(id!=='checkout')ckDone=false;
+  if(id==='gallery')renderGallery();
+  if(id==='home'&&window.renderReviews)renderReviews();
+  if(id==='shop'){shopCat=q.get('c')||'All';renderShop()}if(id==='checkout')renderCheckout();
+  if(id==='book'){var want=q.getAll('s');if(want.length){[].forEach.call(document.querySelectorAll('input[name="services"]'),function(c){c.checked=want.indexOf(c.value)>-1})}if(q.get('d')){document.getElementById('dt').value=q.get('d')}if(q.get('n')){var ddd=document.getElementById('dd');if(ddd&&!ddd.value)ddd.value='I am looking for: '+q.get('n')}sumUpdate()}
+  mp.hidden=true;mb.setAttribute('aria-expanded','false');closeFaq();closeCart();watch();watchProbe();
+  if(jump){setTimeout(function(){var t=document.getElementById(jump);if(t)t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})},80)}else{window.scrollTo(0,0)}
+}
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]');if(!a)return;var h=a.getAttribute('href');if(h.length<2)return;
+  e.preventDefault();window.__h=h;try{location.hash=h}catch(x){}route(true);
+});
+addEventListener('hashchange',function(){window.__h=location.hash;route()});
+renderHome();route(true);
+if(!reduce){var bl=document.querySelector('.blobs'),cc=['#FFC83D','#FF6F91','#3DDC97','#4DB8FF','#A78BFA'];for(var k=0;k<30;k++){var cf=document.createElement('span');cf.className='cf';cf.style.left=(Math.random()*100)+'%';cf.style.background=cc[k%5];if(k%3===0){cf.style.borderRadius='50%';cf.style.width=cf.style.height='.6rem'}cf.style.animationDuration=(7+Math.random()*7)+'s';cf.style.animationDelay=(-Math.random()*12)+'s';bl.appendChild(cf)}}
+mb.addEventListener('click',function(){var o=mp.hidden;mp.hidden=!o;mb.setAttribute('aria-expanded',o?'true':'false')});
+document.getElementById('qf').addEventListener('submit',function(e){
+  e.preventDefault();var d=document.getElementById('qd').value;
+  window.__h=bookHref(document.getElementById('qs').value)+(d?'&d='+d:'');try{location.hash=window.__h}catch(x){}route(true);
+});
+function renderContact(){
+  CONFIG.tiktok=(CONFIG.tiktok||'').replace(/^@/,'');CONFIG.instagram=(CONFIG.instagram||'').replace(/^@/,'');
+  function disp(n){n=String(n||'').replace(/[^0-9]/g,'');if(n.indexOf('234')===0)n='0'+n.slice(3);return n.length===11?n.slice(0,4)+' '+n.slice(4,7)+' '+n.slice(7):n}
+  var it=[],both=CONFIG.wa&&CONFIG.wa2;
+  [CONFIG.wa,CONFIG.wa2].forEach(function(n,i){if(n)it.push(['💬','WhatsApp'+(both?' '+(i+1):''),disp(n),'https://wa.me/'+n+'?text='+encodeURIComponent('Hello Roykid Event & Errands, I have a question.'),'var(--mint)'])});
+  if(CONFIG.phone)it.push(['📞','Call us',CONFIG.phone,'tel:'+CONFIG.phone.replace(/[^0-9+]/g,''),'var(--bu)']);
+  if(CONFIG.tiktok)it.push(['🎵','TikTok','@'+CONFIG.tiktok,'https://www.tiktok.com/@'+CONFIG.tiktok,'var(--bl)']);
+  if(CONFIG.instagram)it.push(['📷','Instagram','@'+CONFIG.instagram,'https://www.instagram.com/'+CONFIG.instagram,'var(--li)']);
+  function ext(u){return u.indexOf('http')===0?' target="_blank" rel="noopener"':''}
+  document.getElementById('cinfo').innerHTML=it.map(function(x){return '<a class="ci" style="--c:'+x[4]+'" href="'+esc(x[3])+'"'+ext(x[3])+'><span class="em">'+x[0]+'</span><div><b>'+x[1]+'</b><span>'+esc(x[2])+'</span></div></a>'}).join('');
+  document.getElementById('fsoc').innerHTML=it.map(function(x){return '<a href="'+esc(x[3])+'"'+ext(x[3])+'>'+x[1]+': '+esc(x[2])+'</a>'}).join('');
+}
+var SLT={};
+function initSlider(stripId,pauseId){
+  var el=document.getElementById(stripId),sl=el.parentNode,bp=sl.querySelector('.sbtn.p'),bn=sl.querySelector('.sbtn.n'),sp=document.getElementById(pauseId),on=!reduce,hover=false,lastUser=0;
+  var canHover=matchMedia('(hover: hover)').matches;
+  function beh(){return reduce?'auto':'smooth'}
+  function pos(c){return c.getBoundingClientRect().left-el.getBoundingClientRect().left+el.scrollLeft}
+  function go(d){
+    var kids=[].slice.call(el.children);if(!kids.length)return;
+    var max=el.scrollWidth-el.clientWidth,x=el.scrollLeft,t,i,p;
+    if(d>0){
+      if(x>=max-4){t=0}else{t=max;for(i=0;i<kids.length;i++){p=pos(kids[i]);if(p>x+6){t=Math.min(p,max);break}}}
+    }else{
+      if(x<=4){t=max}else{t=0;for(i=kids.length-1;i>=0;i--){p=pos(kids[i]);if(p<x-6){t=p;break}}}
+    }
+    el.scrollTo({left:t,behavior:beh()});
+  }
+  function touched(){lastUser=Date.now()}
+  function inView(){var r=sl.getBoundingClientRect();return r.width>0&&r.bottom>0&&r.top<innerHeight}
+  function label(){sp.textContent=on?'Pause':'Play'}
+  label();
+  if(SLT[stripId])clearInterval(SLT[stripId]);SLT[stripId]=setInterval(function(){if(on&&!hover&&!document.hidden&&Date.now()-lastUser>4000&&inView())go(1)},3200);
+  bp.addEventListener('click',function(){touched();go(-1)});bn.addEventListener('click',function(){touched();go(1)});
+  sp.addEventListener('click',function(){on=!on;label()});
+  ['pointerdown','pointerup','touchstart','touchend','wheel','keydown'].forEach(function(ev){el.addEventListener(ev,touched,{passive:true})});
+  if(canHover){el.addEventListener('mouseenter',function(){hover=true});el.addEventListener('mouseleave',function(){hover=false})}
+}
+initSlider('hstrip','spause');
+initSlider('sstrip','spause2');
+/* ===== FAQ (edit the questions and answers here) ===== */
+var FAQS=[
+ ['Using this website',[
+  ['How do I book a service?','Tap Book now at the top of any page. Tick the services you need, add your event details and your contact details, then press Send booking request. We will reply with a quote.'],
+  ['Can I book more than one service?','Yes. Tick as many services as you need in the same request, for example decor, a cake, and party food.'],
+  ['Where do I see what I picked?','On the booking page, the Your request box shows the services and date you chose as you fill in the form.'],
+  ['What happens after I send my request?','We check the date and contact you with a clear quote, using the phone number you gave us. Nothing is confirmed until you agree.'],
+  ['Do I pay on this website?','No. This website does not take payments. We agree the price with you after you send your request.'],
+  ['How do I find the other pages on my phone?','Tap Menu at the top left to see every page: Home, Decor, Cakes and snacks, Catering, Errands, Gallery, and Contact.'],
+  ['How do I see photos of your work?','Scroll to Our work on the home page and swipe the photos or use the arrows. You can also open the Gallery page.'],
+  ['How do I send a review, a complaint, or a question?','Open Contact us. Choose Question, Review, Problem or complaint, or Just saying hello, write your message, and press Send message. You can also rate us with stars at the bottom of the home page.'],
+  ['How do I order from the shop?','Open Shop and tap Add to cart on what you want. Then open your cart with the bag icon at the top, press Checkout, add your delivery details, and place your order.'],
+  ['Can I change what is in my cart?','Yes. Use the plus and minus buttons, or press Remove. Your cart stays saved on your phone until you check out.'],
+  ['How do I pay for a shop order?',(PAYSTACK.publicKey||DIRECT.accountNumber)?'At checkout you choose how to pay: transfer to our account, or use a one-time account number from Paystack made just for your order.':'Online payment is coming soon. For now, place your order and we will contact you to confirm it and arrange payment.'],
+  ['What if I cannot find an item in the shop?','Tap the Others filter, or search for it. If it is not there, press Request it, or use the link under the search message, and send us a booking with what you need. We will arrange it.']
+ ]],
+ ['About our services',[
+  ['What do you offer?','Event decoration, wedding decor, surprise parties, cakes, doughnuts, small chops, cooked party food, foodstuff shopping and delivery, and food hampers.'],
+  ['How early should I book?','As early as you can. Send your date and details and we will confirm if we are available.'],
+  ['How much does it cost?','The price depends on your event, the number of guests, and what you need. Send a booking request and we will give you a clear quote.'],
+  ['Can you handle the decor, cake, and food for one event?','Yes. Tick all the services you need in one booking and we will plan them together.'],
+  ['Do you deliver?','Yes. For errands and hampers we buy and deliver. Put your delivery area in the booking form so we can confirm.'],
+  ['Can I send my own shopping list?','Yes. Type your list in the More details box of the booking form.'],
+  ['What if I need to talk to someone first?','Open Contact us, or use the WhatsApp, TikTok, or Instagram details in the footer.']
+ ]]
+];
+function renderFaq(){
+  document.getElementById('fqbody').innerHTML=FAQS.map(function(g){return '<h4>'+esc(g[0])+'</h4>'+g[1].map(function(x){return '<details><summary>'+esc(x[0])+'</summary><p>'+esc(x[1])+'</p></details>'}).join('')}).join('')+'<div class="fq-f"><a class="btn sm" href="#book">Book now</a><a class="btn sm o" href="#contact">Contact us</a>'+waBtn('sm o')+'</div>';
+}
+renderFaq();
+var fqb=document.getElementById('fqb'),fqp=document.getElementById('fqp');
+function closeFaq(){if(!fqp||fqp.hidden)return;fqp.hidden=true;fqb.setAttribute('aria-expanded','false')}
+function openFaq(){fqp.hidden=false;fqb.setAttribute('aria-expanded','true');document.getElementById('fqx').focus()}
+fqb.addEventListener('click',function(){if(fqp.hidden){openFaq()}else{closeFaq();fqb.focus()}});
+document.getElementById('fqx').addEventListener('click',function(){closeFaq();fqb.focus()});
+fqp.addEventListener('click',function(e){if(e.target.closest('a'))closeFaq()});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&fqp&&!fqp.hidden){closeFaq();fqb.focus()}});
+document.addEventListener('click',function(e){if(fqp&&!fqp.hidden&&!e.target.closest('#fqp')&&!e.target.closest('#fqb'))closeFaq()});
+/* ===== SHOP: products, cart, checkout ===== */
+function gid(i){return document.getElementById(i)}
+function cs(c){return CATS[c]||['\ud83d\udecd\ufe0f','#CFF1DE']}
+function money(n){return '\u20a6'+Number(n).toLocaleString('en-NG')}
+function prod(id){for(var i=0;i<PRODUCTS.length;i++){if(PRODUCTS[i].id===id)return PRODUCTS[i]}return null}
+function cartLines(){var o=[];Object.keys(cart).forEach(function(id){var p=prod(id);if(p&&p.stock!==false&&cart[id]>0)o.push({p:p,q:cart[id]})});return o}
+function cartCount(){return cartLines().reduce(function(a,l){return a+l.q},0)}
+function cartSub(){return cartLines().reduce(function(a,l){return a+l.p.price*l.q},0)}
+function cartFee(){return SHOP.deliveryFee>0&&cartCount()>0?Number(SHOP.deliveryFee):0}
+function cartTotal(){return cartSub()+cartFee()}
+function saveCart(){try{localStorage.setItem('rk_cart',JSON.stringify(cart))}catch(e){}}
+function stepper(id,q){return '<div class="qty" role="group" aria-label="Quantity"><button type="button" data-dec="'+esc(id)+'" aria-label="Remove one">&minus;</button><span>'+q+'</span><button type="button" data-inc="'+esc(id)+'" aria-label="Add one">+</button></div>'}
+function prodCard(p){
+  var q=cart[p.id]||0,s=cs(p.cat),out=p.stock===false;
+  return '<article class="pc" data-id="'+esc(p.id)+'"><div class="pi">'+frame([p.img],0,p.emoji||s[0],s[1],p.name,'')+(out?'<span class="oos">Out of stock</span>':'')+'</div><div class="pb"><span class="pcat">'+esc(p.cat)+'</span><h3>'+esc(p.name)+'</h3><p>'+esc(p.desc||'')+'</p><div class="pf"><div><b class="pr">'+money(p.price)+'</b>'+(p.unit?'<small> / '+esc(p.unit)+'</small>':'')+'</div>'+(out?'<button class="btn sm" type="button" disabled>Sold out</button>':(q?stepper(p.id,q):'<button class="btn sm" type="button" data-add="'+esc(p.id)+'">Add to cart</button>'))+'</div></div></article>';
+}
+function lineHTML(l){var s=cs(l.p.cat);return '<div class="cl"><div class="cth">'+frame([l.p.img],0,l.p.emoji||s[0],s[1],l.p.name,'')+'</div><div><b>'+esc(l.p.name)+'</b><small>'+money(l.p.price)+' each</small>'+stepper(l.p.id,l.q)+'</div><div class="cs">'+money(l.p.price*l.q)+'<button type="button" data-rm="'+esc(l.p.id)+'">Remove</button></div></div>'}
+function totalsHTML(){var f=cartFee();return '<div class="trow"><span>Subtotal</span><b>'+money(cartSub())+'</b></div>'+(f?'<div class="trow"><span>Delivery</span><b>'+money(f)+'</b></div>':'')+(SHOP.deliveryNote?'<p class="smp">'+esc(SHOP.deliveryNote)+'</p>':'')+'<div class="trow t"><span>Total</span><span>'+money(cartTotal())+'</span></div>'}
+function featuredList(){
+  var ids=SHOP.featured||[],list=PRODUCTS.filter(function(p){return p.stock!==false&&(p.featured||ids.indexOf(p.id)>-1)});
+  if(!list.length)list=PRODUCTS.filter(function(p){return p.stock!==false}).slice(0,6);
+  return list.slice(0,10);
+}
+function renderShopStrip(){var el=gid('sstrip');if(el)el.innerHTML=featuredList().map(prodCard).join('')}
+function norm(s){return String(s||'').toLowerCase().replace(/[^a-z0-9]/g,'')}
+function lev1(a,b){
+  if(a===b)return true;
+  var la=a.length,lb=b.length;if(Math.abs(la-lb)>1)return false;
+  var i=0,j=0,e=0;
+  while(i<la&&j<lb){
+    if(a.charAt(i)===b.charAt(j)){i++;j++}
+    else{e++;if(e>1)return false;if(la>lb)i++;else if(lb>la)j++;else{i++;j++}}
+  }
+  return e+(la-i)+(lb-j)<=1;
+}
+/* forgiving search: ignores spaces, dashes, capitals, word order, and one small typo */
+function shopMatch(p,q){
+  var qn=norm(q);if(!qn)return true;
+  var hay=((p.name||'')+' '+(p.desc||'')+' '+(p.cat||'')+' '+(p.unit||'')).toLowerCase(),flat=norm(hay),words=hay.split(/[^a-z0-9]+/).filter(Boolean);
+  if(flat.indexOf(qn)>-1)return true;
+  var toks=String(q).toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  return toks.length>0&&toks.every(function(t){
+    if(flat.indexOf(t)>-1)return true;
+    return t.length>=4&&words.some(function(w){return lev1(t,w)});
+  });
+}
+function othersCard(){
+  return '<a class="pc plusc" href="#book" aria-label="Request something else"><div class="pi"><svg class="plus" viewBox="0 0 80 80" aria-hidden="true"><defs><linearGradient id="plusg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B7A4E"/><stop offset="1" stop-color="#35B87F"/></linearGradient></defs><circle cx="40" cy="40" r="37"/><path d="M40 20v40M20 40h40"/></svg></div><div class="pb"><span class="pcat">Others</span><h3>Something else?</h3><p>Cannot find what you need? Tell us and we will arrange it for you.</p><div class="pf"><span class="btn sm">Request it &rarr;</span></div></div></a>';
+}
+function applyShopFilter(){
+  var q=shopQ,shown=0;
+  [].forEach.call(document.querySelectorAll('#shopgrid .pc'),function(c){
+    var other=c.classList.contains('plusc'),show;
+    if(shopCat==='Others'){show=other}
+    else if(other){show=false}
+    else{var p=prod(c.dataset.id);show=!!p&&(shopCat==='All'||p.cat===shopCat)&&(!q||shopMatch(p,shopQraw));if(show)shown++}
+    c.hidden=!show;
+  });
+  gid('shopbanner').hidden=!SHOP.sample||shopCat==='Foodstuff';
+  var none=gid('shopnone'),nf=shopCat!=='Others'&&shown===0;
+  none.hidden=!nf;
+  if(nf){none.innerHTML=(shopQ?'<p><b>Sorry, we could not find &ldquo;'+esc(shopQraw)+'&rdquo; in the shop.</b></p>':'<p><b>Nothing in this section yet.</b></p>')+'<p>Cannot find what you are looking for? <a href="#book'+(shopQraw?'?n='+encodeURIComponent(shopQraw):'')+'">Tell us what you need and we will arrange it</a>.</p>'}
+}
+function renderShop(){
+  var cats=['All'];PRODUCTS.forEach(function(p){if(cats.indexOf(p.cat)<0)cats.push(p.cat)});cats.push('Others');
+  gid('shopchips').innerHTML=cats.map(function(c){return '<button type="button" class="chip'+(c===shopCat?' on':'')+'" data-c="'+esc(c)+'" aria-pressed="'+(c===shopCat)+'">'+esc(c)+'</button>'}).join('');
+  if(!shopBuilt){gid('shopgrid').innerHTML=PRODUCTS.map(prodCard).join('')+othersCard();shopBuilt=true}
+  applyShopFilter();
+  gid('shopbanner').hidden=!SHOP.sample||shopCat==='Foodstuff';
+}
+function renderDrawer(){
+  var ls=cartLines();
+  gid('dl').innerHTML=ls.length?ls.map(lineHTML).join(''):'<p class="empty2">Your cart is empty.<br>Add something from the shop.</p>';
+  gid('df').innerHTML=ls.length?totalsHTML()+'<a class="btn" style="width:100%;margin-top:.9rem" href="#checkout">Checkout</a>':'<a class="btn" style="width:100%" href="#shop">Browse the shop</a>';
+}
+var payMethod='';
+function payOptions(){return [
+  {id:'direct',title:'Pay to our account',desc:'Transfer to our bank account. We confirm your order when we see the payment.',on:!!DIRECT.accountNumber},
+  {id:'paystack',title:'Pay with a one-time account number',desc:'Paystack gives you a temporary account number made just for this order. Payment is confirmed automatically.',on:!!PAYSTACK.publicKey}
+]}
+function directInfo(){return '<b>Our account</b><br>Bank: '+esc(DIRECT.bank)+'<br>Account number: <b>'+esc(DIRECT.accountNumber)+'</b><br>Account name: '+esc(DIRECT.accountName)+'<br>Amount: <b>'+money(cartTotal())+'</b><br><small>After you place your order we show these details again, with your order number to use as the transfer narration.</small>'+(DIRECT.note?'<br><small>'+esc(DIRECT.note)+'</small>':'')}
+function renderPayment(){
+  var opts=payOptions(),any=opts.some(function(o){return o.on}),box=gid('payopts'),info=gid('payinfo'),btn=gid('placeb');
+  if(!any){box.innerHTML=opts.map(function(o){return '<label class="po off"><input type="radio" name="pm" form="nofrm" value="'+o.id+'" disabled><span class="pot">'+o.title+'</span><span class="pod">'+o.desc+' <em>Available soon.</em></span></label>'}).join('');payMethod='later';info.innerHTML='<b>Online payment is coming soon.</b> Place your order and we will contact you to confirm it and arrange payment.';btn.textContent='Place order';gid('f_email').required=false;return}
+  if(!opts.some(function(o){return o.on&&o.id===payMethod}))payMethod=opts.filter(function(o){return o.on})[0].id;
+  box.innerHTML=opts.map(function(o){return '<label class="po'+(o.on?'':' off')+'"><input type="radio" name="pm" form="nofrm" value="'+o.id+'"'+(o.id===payMethod?' checked':'')+(o.on?'':' disabled')+'><span class="pot">'+o.title+'</span><span class="pod">'+o.desc+(o.on?'':' <em>Not available yet.</em>')+'</span></label>'}).join('');
+  info.innerHTML=payMethod==='direct'?directInfo():'You will get a one-time account number for this order. Transfer the exact amount and your order is confirmed automatically.';
+  btn.textContent=payMethod==='paystack'?'Pay '+money(cartTotal())+' with Paystack':'Place order';
+  gid('f_email').required=payMethod==='paystack';
+}
+function renderCheckout(){
+  var ls=cartLines(),has=ls.length>0;
+  if(ckDone){gid('ckwrap').hidden=true;gid('ckempty').hidden=true;gid('ckdone').hidden=false;return}
+  gid('ckdone').hidden=true;gid('ckwrap').hidden=!has;gid('ckempty').hidden=has;
+  gid('ordsum').innerHTML='<h3>Order summary</h3>'+ls.map(lineHTML).join('')+totalsHTML();
+  renderPayment();
+}
+function refreshCart(id){
+  var n=cartCount(),b=gid('cartn');b.textContent=n;b.hidden=n===0;b.classList.remove('bump');void b.offsetWidth;if(n)b.classList.add('bump');
+  if(id){var p=prod(id);[].forEach.call(document.querySelectorAll('.pc[data-id="'+id+'"]'),function(c){if(p)c.outerHTML=prodCard(p)});if(shopBuilt)applyShopFilter()}
+  renderDrawer();
+  if(!document.querySelector('[data-page="checkout"]').hidden)renderCheckout();
+}
+function cartSet(id,q){q=Math.max(0,Math.min(50,q));if(q===0)delete cart[id];else cart[id]=q;saveCart();refreshCart(id)}
+function openCart(){gid('drawer').hidden=false;gid('dov').hidden=false;document.body.style.overflow='hidden';gid('dx').focus()}
+function closeCart(){var d=gid('drawer');if(!d||d.hidden)return;d.hidden=true;gid('dov').hidden=true;document.body.style.overflow=''}
+document.addEventListener('click',function(e){
+  var a=e.target.closest('[data-add],[data-inc],[data-dec],[data-rm],[data-c]');if(!a)return;
+  if(a.dataset.c!==undefined){shopCat=a.dataset.c;renderShop();return}
+  var id=a.dataset.add||a.dataset.inc||a.dataset.dec||a.dataset.rm;
+  if(a.dataset.dec!==undefined)cartSet(id,(cart[id]||0)-1);
+  else if(a.dataset.rm!==undefined)cartSet(id,0);
+  else cartSet(id,(cart[id]||0)+1);
+});
+gid('cartb').addEventListener('click',openCart);gid('dx').addEventListener('click',closeCart);gid('dov').addEventListener('click',closeCart);
+addEventListener('keydown',function(e){if(e.key==='Escape')closeCart()});
+gid('shopq').addEventListener('input',function(){shopQraw=this.value.trim();shopQ=shopQraw.toLowerCase();if(shopQ&&shopCat==='Others')shopCat='All';renderShop()});
+/* live prices from a Google Sheet (optional) */
+function parseCSV(t){var rows=[],r=[],c='',q=false,i,ch;for(i=0;i<t.length;i++){ch=t[i];if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}else{if(ch==='"')q=true;else if(ch===','){r.push(c);c=''}else if(ch==='\n'||ch==='\r'){if(ch==='\r'&&t[i+1]==='\n')i++;r.push(c);rows.push(r);r=[];c=''}else c+=ch}}if(c!==''||r.length){r.push(c);rows.push(r)}return rows.filter(function(x){return x.join('').trim()!==''})}
+function slug(s){return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function loadCatalog(){
+  if(!SHOP.catalogUrl)return;
+  fetch(SHOP.catalogUrl).then(function(r){return r.text()}).then(function(t){
+    var rows=parseCSV(t),head=(rows.shift()||[]).map(function(x){return x.trim().toLowerCase()}),list=[];
+    rows.forEach(function(r){var o={};head.forEach(function(k,i){o[k]=(r[i]||'').trim()});
+      var price=Number(String(o.price||'').replace(/[^0-9.]/g,''));if(!o.name||!price)return;
+      list.push({id:o.id||slug(o.name),name:o.name,cat:o.category||o.cat||'Shop',price:price,unit:o.unit||'',desc:o.description||o.desc||'',img:o.image||o.img||'',stock:!/^(no|false|0|out|sold)/i.test(o.stock||o.instock||'yes'),featured:/^(yes|true|1|y)/i.test(o.featured||''),svc:(o.service||o.services||'')})});
+    if(list.length){PRODUCTS=list;Object.keys(cart).forEach(function(id){if(!prod(id))delete cart[id]});saveCart();SHOP.sample=false;
+      gid('shopnote').textContent='Prices updated at '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})+'.';
+      shopBuilt=false;renderShop();renderShopStrip();refreshCart()}
+  }).catch(function(){});
+}
+loadCatalog();if(SHOP.catalogUrl)setInterval(function(){if(!document.hidden)loadCatalog()},300000);
+/* checkout */
+function loadPay(){return new Promise(function(res,rej){if(window.PaystackPop)return res();var s=document.createElement('script');s.src='https://js.paystack.co/v2/inline.js';s.onload=res;s.onerror=rej;document.head.appendChild(s)})}
+function ckSay(m){var e=gid('ckerr');e.textContent=m;e.hidden=false;e.scrollIntoView({block:'center'})}
+function finishOrder(num,paid,method){
+  var total=cartTotal(),rec=gid('f_items').value+'\n\nTotal: '+money(total)+'\nOrder number: '+num,bank=gid('ckbank'),wa=gid('ckwa');
+  var msg=paid?'Payment received and your order is placed. Please keep your order number.':(method==='direct'?'Your order is placed. Please transfer '+money(total)+' to the account below and use your order number as the narration. We will confirm your order when we see the payment.':'We have received your order and will contact you shortly to confirm it and arrange payment. Please keep your order number.');
+  gid('ckmsg').textContent=msg;
+  if(method==='direct'){
+    bank.innerHTML='<h3>Pay to this account</h3><p>Bank: <b>'+esc(DIRECT.bank)+'</b></p><p>Account number: <b>'+esc(DIRECT.accountNumber)+'</b></p><p>Account name: <b>'+esc(DIRECT.accountName)+'</b></p><p>Amount: <b>'+money(total)+'</b></p><p>Narration: <b>'+esc(num)+'</b></p>'+(DIRECT.note?'<p><small>'+esc(DIRECT.note)+'</small></p>':'')+'<button type="button" class="btn sm" id="copyacct">Copy account number</button>';
+    bank.hidden=false;
+    gid('copyacct').addEventListener('click',function(){var b=this;function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy account number'},1800)}
+      try{navigator.clipboard.writeText(DIRECT.accountNumber).then(ok)}catch(e){}});
+  }else{bank.hidden=true}
+  var u=method==='direct'?waUrl('Hello Roykid Event & Errands, I have paid '+money(total)+' for order '+num+'.'):'';
+  if(u){wa.href=u;wa.hidden=false}else{wa.hidden=true}
+  gid('ckrec').textContent=rec;ckDone=true;cart={};saveCart();refreshCart();renderCheckout();window.scrollTo(0,0);
+}
+function sendOrder(num,paid,method){
+  var f=gid('orf');
+  if(/demo=1/.test((window.__h||location.hash)+location.search)){finishOrder(num,paid,method);return Promise.resolve()}
+  return fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()}).then(function(r){if(!r.ok)throw 0;finishOrder(num,paid,method)});
+}
+gid('payopts').addEventListener('change',function(e){if(e.target&&e.target.value){payMethod=e.target.value;renderCheckout()}});
+gid('orf').addEventListener('submit',function(e){
+  e.preventDefault();var ls=cartLines();if(!ls.length)return;
+  var b=gid('placeb');b.disabled=true;gid('ckerr').hidden=true;
+  var num='RK'+Date.now().toString(36).toUpperCase()+Math.floor(Math.random()*1296).toString(36).toUpperCase(),method=payMethod;
+  gid('f_num').value=num;gid('f_total').value=cartTotal();gid('f_ref').value='';gid('f_method').value=method;
+  gid('f_items').value=ls.map(function(l){return l.q+' x '+l.p.name+' @ '+money(l.p.price)+' = '+money(l.p.price*l.q)}).join('\n')+(cartFee()?'\nDelivery: '+money(cartFee()):'');
+  var done=function(){b.disabled=false};
+  if(method!=='paystack'){
+    gid('f_pay').value=method==='direct'?'Direct bank transfer: awaiting payment':'Not paid online (arrange payment)';
+    sendOrder(num,false,method).catch(function(){ckSay('Sorry, your order did not send. Please try again, or contact us on WhatsApp.')}).then(done);return;
+  }
+  loadPay().then(function(){
+    var paid=false;
+    var popup=new PaystackPop();
+    popup.newTransaction({
+      key:PAYSTACK.publicKey,email:gid('f_email').value,amount:Math.round(cartTotal()*100),currency:'NGN',reference:num,ref:num,channels:['bank_transfer'],
+      metadata:{custom_fields:[{display_name:'Name',variable_name:'name',value:gid('f_name').value},{display_name:'Order',variable_name:'order',value:num}]},
+      onSuccess:function(t){var ref=(t&&(t.reference||t.trxref))||num;paid=true;gid('f_pay').value='Paid with Paystack one-time account (check the amount in your Paystack dashboard)';gid('f_ref').value=ref;
+        sendOrder(num,true,method).catch(function(){ckSay('Your payment went through but we could not send your order details. Please contact us and quote this reference: '+ref)}).then(done)},
+      onCancel:function(){if(!paid){ckSay('Payment was not completed, so your order has not been placed yet.');done()}},
+      onError:function(err){ckSay('The payment window could not start ('+((err&&err.message)||'please try again')+').');done()}
+    });
+  }).catch(function(){ckSay('Could not open the payment window. Please check your connection and try again.');done()});
+});
+refreshCart();
+/* ===== star review ===== */
+(function(){
+  var f=gid('rvf');if(!f)return;
+  var stars=gid('stars'),lab=gid('rlab'),done=gid('rvdone'),sent=gid('rvsent');
+  var EM=['','\ud83d\ude1e','\ud83d\ude15','\ud83d\ude42','\ud83d\ude03','\ud83e\udd29'];
+  var TX=['','We are sorry. Please tell us what went wrong.','We can do better. Tell us how.','Thanks! Tell us how we can improve.','Great! Thank you.','Wonderful! Thank you so much!'];
+  var COL=['#FFC83D','#FF6F91','#3DDC97','#4DB8FF','#A78BFA'];
+  function burst(host,x,y,n,spread){
+    if(reduce)return;
+    for(var i=0;i<n;i++){var s=document.createElement('i'),a=Math.random()*Math.PI*2,d=spread*.4+Math.random()*spread*.6;
+      s.className='sp';s.style.left=x+'px';s.style.top=y+'px';s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');s.style.background=COL[i%COL.length];
+      host.appendChild(s);(function(el){setTimeout(function(){el.remove()},950)})(s)}
+  }
+  stars.addEventListener('change',function(e){
+    var v=+e.target.value,labels=[].slice.call(stars.querySelectorAll('label')).reverse();
+    stars.classList.add('rated');sent.hidden=true;
+    labels.forEach(function(l,i){if(i<v){l.classList.remove('pop');void l.offsetWidth;l.style.animationDelay=(i*70)+'ms';l.classList.add('pop')}else{l.classList.remove('pop')}});
+    var c=labels[v-1];burst(stars,c.offsetLeft+c.offsetWidth/2,c.offsetTop+c.offsetHeight/2,v===5?24:12,v===5?130:70);
+    lab.innerHTML='<span class="remo">'+EM[v]+'</span> '+TX[v];
+  });
+  function thanks(v){
+    f.hidden=true;sent.hidden=true;done.hidden=false;gid('rvgot').textContent=new Array(v+1).join('\u2605');
+    burst(done,done.offsetWidth/2,70,30,170);
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var r=f.querySelector('input[name="rating"]:checked');
+    if(!r){stars.classList.remove('shake');void stars.offsetWidth;stars.classList.add('shake');lab.textContent='Please tap a star to rate us.';return}
+    if(/demo=1/.test((window.__h||location.hash)+location.search)){thanks(+r.value);return}
+    var b=f.querySelector('button[type="submit"]');b.disabled=true;
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
+      .then(function(res){if(!res.ok)throw 0;thanks(+r.value)})
+      .catch(function(){sent.textContent='Sorry, that did not send. Please try again in a moment.';sent.hidden=false})
+      .then(function(){b.disabled=false});
+  });
+  gid('rvagain').addEventListener('click',function(){
+    f.reset();f.hidden=false;done.hidden=true;stars.classList.remove('rated');[].forEach.call(stars.querySelectorAll('label'),function(l){l.classList.remove('pop')});lab.textContent='Tap a star to rate us';
+  });
+})();
+/* ===== recent reviews slideshow ===== */
+(function(){
+  var box=gid('reviewlist'),view=gid('rview'),dots=gid('rdots'),items=[],csv=[],cur=0,lastUser=0,hover=false,tx=null;
+  var COL=['#FFE9A3','#FFD3DE','#CFF1DE','#CDE9FB','#E5D9FF'];
+  var SAMPLE=[
+    {name:'Chioma',rating:5,text:'The decor was beautiful and everything was set up before the guests arrived. Thank you!',service:'Decor and celebrations',date:'2026-10-02'},
+    {name:'Femi',rating:5,text:'The small chops finished in minutes. Everyone asked who made them.',service:'Cakes and snacks',date:'2026-09-28'},
+    {name:'Ada',rating:4,text:'I could not leave work, so they did my foodstuff shopping and delivered the same day.',service:'Errands and hampers',date:'2026-09-20'}
+  ].map(function(r){r.sample=true;return r});
+  function demoOn(){return /demo=1/.test((window.__h||location.hash)+location.search)}
+  function stars(n){n=Math.max(1,Math.min(5,Math.round(n)));return new Array(n+1).join('\u2605')+new Array(6-n).join('\u2606')}
+  function dateText(d){var t=Date.parse(d);return t?new Date(t).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):''}
+  function card(r,i){
+    var n=(r.name||'Customer').trim()||'Customer',meta=[r.service,dateText(r.date)].filter(Boolean).join(' \u00b7 ');
+    return '<figure class="rqc">'+(r.sample?'<span class="rsamp">Sample review</span>':'')+'<div class="qm" aria-hidden="true">\u201c</div><div class="rst" role="img" aria-label="'+r.rating+' out of 5 stars">'+stars(r.rating)+'</div><blockquote>'+esc(r.text)+'</blockquote><figcaption><span class="rav" style="--c:'+COL[i%COL.length]+'" aria-hidden="true">'+esc(n.charAt(0).toUpperCase())+'</span><div><b>'+esc(n)+'</b>'+(meta?'<small>'+esc(meta)+'</small>':'')+'</div></figcaption></figure>';
+  }
+  function show(i){
+    cur=(i+items.length)%items.length;view.innerHTML=card(items[cur],cur);
+    [].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===cur);d.setAttribute('aria-current',k===cur?'true':'false')});
+  }
+  function inView(){var r=box.getBoundingClientRect();return r.width>0&&r.bottom>0&&r.top<innerHeight}
+  window.renderReviews=function(){
+    var all=(demoOn()?SAMPLE:(REVIEWS.list||[]).concat(csv)).filter(function(r){return r&&r.text&&Number(r.rating)>=1});
+    all.sort(function(a,b){return (Date.parse(b.date)||0)-(Date.parse(a.date)||0)});
+    items=all.slice(0,10);box.hidden=!items.length;
+    if(!items.length)return;
+    dots.innerHTML=items.map(function(_,k){return '<button type="button" aria-label="Show review '+(k+1)+'"></button>'}).join('');
+    gid('rprev').hidden=gid('rnext').hidden=items.length<2;dots.hidden=items.length<2;
+    show(0);
+  };
+  function touched(){lastUser=Date.now()}
+  gid('rprev').addEventListener('click',function(){touched();show(cur-1)});
+  gid('rnext').addEventListener('click',function(){touched();show(cur+1)});
+  dots.addEventListener('click',function(e){var k=[].indexOf.call(dots.children,e.target.closest('button'));if(k>-1){touched();show(k)}});
+  view.addEventListener('touchstart',function(e){touched();tx=e.touches[0].clientX},{passive:true});
+  view.addEventListener('touchend',function(e){touched();if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;tx=null;if(Math.abs(dx)>40)show(cur+(dx<0?1:-1))},{passive:true});
+  if(matchMedia('(hover: hover)').matches){box.addEventListener('mouseenter',function(){hover=true});box.addEventListener('mouseleave',function(){hover=false})}
+  if(!reduce)setInterval(function(){if(items.length>1&&!hover&&!document.hidden&&Date.now()-lastUser>7000&&inView())show(cur+1)},6500);
+  if(REVIEWS.csvUrl){
+    fetch(REVIEWS.csvUrl).then(function(r){return r.text()}).then(function(t){
+      var rows=parseCSV(t),head=(rows.shift()||[]).map(function(x){return x.trim().toLowerCase()}),out=[];
+      rows.forEach(function(r){var o={};head.forEach(function(k,i){o[k]=(r[i]||'').trim()});
+        var text=o.message||o.text||o.review||'',ok=o.show===undefined||/^(yes|true|1|y)/i.test(o.show);
+        if(ok&&text)out.push({name:o.name,rating:Number(o.rating)||5,text:text,service:o.service||'',date:o.date||''})});
+      csv=out;window.renderReviews();
+    }).catch(function(){});
+  }
+  window.renderReviews();
+})();
+/* ===== shop strip under "Recent work" on each service page ===== */
+var SVC_CATS={decor:['Decor'],cakes:['Snacks','Cakes'],catering:['Snacks','Catering'],errands:['Foodstuff','Hampers']};
+var SHOPHEAD={decor:['Shop decor','Balloons, backdrops, and table pieces. Add them to your cart.'],cakes:['Shop cakes and snacks','Treats ready to order. Add them to your cart.'],catering:['Shop for your party','Snacks to go with your food. Add them to your cart.'],errands:['Shop foodstuff and hampers','Add what you need to your cart.']};
+function svcTag(p,id){return String(p.svc||'').toLowerCase().split(',').map(function(x){return x.trim()}).indexOf(id)>-1}
+function svcProducts(id){
+  var cats=SVC_CATS[id]||[];
+  var list=PRODUCTS.filter(function(p){
+    if(p.stock===false)return false;
+    return cats.indexOf(p.cat)>-1||svcTag(p,id);
+  });
+  var tagged=list.filter(function(p){return svcTag(p,id)});
+  return (tagged.length?tagged:list).slice(0,6);
+}
+function svcShopHTML(id){
+  var list=svcProducts(id);if(!list.length)return '';
+  var cats=[];list.forEach(function(p){if(cats.indexOf(p.cat)<0)cats.push(p.cat)});
+  var more='#shop'+(cats.length===1?'?c='+encodeURIComponent(cats[0]):''),hd=SHOPHEAD[id]||['Shop','Add items to your cart.'];
+  return '<section class="pad"><div class="w"><div class="hd rv"><h2>'+esc(hd[0])+'</h2><p>'+esc(hd[1])+'</p></div><div class="sl rv"><div class="strip sstrip" id="svcstrip" tabindex="0" aria-label="Shop slideshow. Swipe or use the arrows.">'+list.map(prodCard).join('')+'</div><button class="sbtn p" type="button" aria-label="Previous item">&#8249;</button><button class="sbtn n" type="button" aria-label="Next item">&#8250;</button></div><div class="sctl"><button class="spause" id="svcpause" type="button">Pause</button><a class="btn sm" style="margin-left:.6rem" href="'+more+'">Buy more</a></div></div></section>';
+}
+function fillWork(id){
+  var el=gid('wstrip');if(!el)return;var s=SV[id];
+  function paint(list){el.innerHTML=(list.length?list:[null,null,null,null,null]).map(function(src,i){return frame([src],0,s.items[i%s.items.length].e,WCOL[i%5],s.t+' by Roykid','',i===0?s.s:'')}).join('')}
+  paint([]);
+  probeSeries(id+'-',12,function(found){if(el.isConnected)paint(found.length?found:(PHOTOS.recent[id]||[]))});
+}
+function renderService(id){
+  renderService0(id);fillWork(id);
+  var html=svcShopHTML(id);if(!html)return;
+  var at=null;[].forEach.call(document.querySelectorAll('#svc section'),function(s){var t=s.querySelector('h2');if(t&&t.textContent==='Recent work')at=s});
+  if(at){at.insertAdjacentHTML('afterend',html);initSlider('svcstrip','svcpause')}
+}
+var ctf=document.getElementById('ctf');
+ctf.addEventListener('submit',function(e){
+  e.preventDefault();var s=document.getElementById('csent'),b=ctf.querySelector('button[type="submit"]');b.disabled=true;
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(ctf)).toString()})
+  .then(function(r){if(!r.ok)throw 0;s.textContent='Thank you! Your message has been sent. We will get back to you soon.';ctf.reset()})
+  .catch(function(){s.textContent='Sorry, that did not send. Please try again in a moment.'})
+  .then(function(){s.hidden=false;b.disabled=false;s.scrollIntoView({block:'center'})});
+});
+var rf=document.getElementById('rf');
+rf.addEventListener('change',sumUpdate);rf.addEventListener('input',sumUpdate);
+rf.addEventListener('submit',function(e){
+  e.preventDefault();var s=document.getElementById('sent'),b=rf.querySelector('button[type="submit"]');
+  if(!rf.querySelector('input[name="services"]:checked')){s.textContent='Please choose at least one service above.';s.hidden=false;s.scrollIntoView({block:'center'});return}
+  b.disabled=true;
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(rf)).toString()})
+  .then(function(r){if(!r.ok)throw 0;s.textContent='Thank you! We have received your booking request and will contact you soon with a quote.';rf.reset();sumUpdate()})
+  .catch(function(){s.textContent='Sorry, that did not send. Please try again or contact us another way.'})
+  .then(function(){s.hidden=false;b.disabled=false;s.scrollIntoView({block:'center'})});
+});
+/* ===== photo viewer: tap a shop or gallery photo to enlarge it, tap the X to close ===== */
+(function(){
+  var box=document.createElement('div');box.id='lb';box.hidden=true;box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-label','Enlarged photo');
+  box.innerHTML='<button class="lbx" type="button" aria-label="Close photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button><img alt=""><p class="lbc"></p>';
+  document.body.appendChild(box);
+  var im=box.querySelector('img'),cap=box.querySelector('.lbc'),x=box.querySelector('.lbx'),back=null;
+  function open(src,alt,text){
+    im.src=src;im.alt=alt||'';cap.textContent=text||'';cap.hidden=!text;
+    back=document.activeElement;box.hidden=false;document.documentElement.style.overflow='hidden';x.focus({preventScroll:true});
+  }
+  function close(){
+    if(box.hidden)return;box.hidden=true;im.removeAttribute('src');document.documentElement.style.overflow='';
+    if(back&&back.focus)try{back.focus({preventScroll:true})}catch(e){}
+  }
+  x.addEventListener('click',close);
+  box.addEventListener('click',function(e){if(e.target!==im&&!x.contains(e.target))close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  window.addEventListener('hashchange',close);
+  document.addEventListener('click',function(e){
+    var t=e.target.closest&&e.target.closest('.pi,.gi');if(!t||t.closest('#lb'))return;
+    if(e.target.closest('button,a,input,select'))return;
+    var img=t.querySelector('img');if(!img||!img.getAttribute('src'))return;
+    var text='';
+    if(t.classList.contains('pi')){
+      var c=t.closest('.pc');if(c){var h=c.querySelector('h3'),pr=c.querySelector('.pr'),u=c.querySelector('.pf small');
+        text=(h?h.textContent:'')+(pr?'  \u00b7  '+pr.textContent+(u?u.textContent:''):'')}
+    }else{var fc=t.querySelector('figcaption');text=fc?fc.textContent:''}
+    open(img.getAttribute('src'),img.alt,text);
+  });
+})();
+</script>
+</body>
+</html>
